@@ -1,7 +1,10 @@
 import React from "react";
 import InputField from "../components/InputField";
-
-const ManualInterface = () => {
+interface MyProps {
+    manual: boolean;
+}
+// const AuthScreen
+const ManualInterface: React.FC<MyProps> = (props: MyProps) => {
 
     function calculatePay() {
         var BaseRate = parseFloat((document.getElementById("BaseRate") as HTMLInputElement).value) || 30.36;
@@ -12,13 +15,30 @@ const ManualInterface = () => {
         var PublicHolidayMultiplier = parseFloat((document.getElementById("PublicHolidayMultiplier") as HTMLInputElement).value) || 0;
         var EveningMultiplier = parseFloat((document.getElementById("EveningMultiplier") as HTMLInputElement).value) || 0;
         var OvertimeMultiplier = parseFloat((document.getElementById("OvertimeMultiplier") as HTMLInputElement).value) || 0;
+        
+        var WeekdayHours:number;
+        var SaturdayHours:number;
+        var SundayHours:number;
+        var PublicHolidayHours:number;
+        var EveningHours:number;
+        var OvertimeHours:number;
 
-        var WeekdayHours = parseFloat((document.getElementById("WeekdayHours") as HTMLInputElement).value) || 0;
-        var SaturdayHours = parseFloat((document.getElementById("SaturdayHours") as HTMLInputElement).value) || 0;
-        var SundayHours = parseFloat((document.getElementById("SundayHours") as HTMLInputElement).value) || 0;
-        var PublicHolidayHours = parseFloat((document.getElementById("PublicHolidayHours") as HTMLInputElement).value) || 0;
-        var EveningHours = parseFloat((document.getElementById("EveningHours") as HTMLInputElement).value) || 0;
-        var OvertimeHours = parseFloat((document.getElementById("OvertimeHours") as HTMLInputElement).value) || 0;
+        if (props.manual) {
+            WeekdayHours = parseFloat((document.getElementById("WeekdayHours") as HTMLInputElement).value) || 0;
+            SaturdayHours = parseFloat((document.getElementById("SaturdayHours") as HTMLInputElement).value) || 0;
+            SundayHours = parseFloat((document.getElementById("SundayHours") as HTMLInputElement).value) || 0;
+            PublicHolidayHours = parseFloat((document.getElementById("PublicHolidayHours") as HTMLInputElement).value) || 0;
+            EveningHours = parseFloat((document.getElementById("EveningHours") as HTMLInputElement).value) || 0;
+            OvertimeHours = parseFloat((document.getElementById("OvertimeHours") as HTMLInputElement).value) || 0;
+        } else {
+            // Replace with Google Calendar
+            WeekdayHours = 0;
+            SaturdayHours = 0;
+            SundayHours = 0;
+            PublicHolidayHours = 0;
+            EveningHours = 0;
+            OvertimeHours = 0;
+        }
         
         var WeekdayRate = BaseRate * WeekdayMultiplier;
         var SaturdayRate = BaseRate * SaturdayMultiplier;
@@ -44,7 +64,7 @@ const ManualInterface = () => {
         (document.getElementById("TableOvertimeHours") as HTMLInputElement).innerHTML = OvertimeHours.toFixed(2);
         (document.getElementById("TableTotalHours") as HTMLInputElement).innerHTML = (WeekdayHours + SaturdayHours + SundayHours + PublicHolidayHours + EveningHours + OvertimeHours).toFixed(2);
 
-        (document.getElementById("TableWeekdayRate") as HTMLTableCellElement).innerHTML = BaseRate.toFixed(2) + "/hr";
+        (document.getElementById("TableWeekdayRate") as HTMLTableCellElement).innerHTML = WeekdayRate.toFixed(2) + "/hr";
         (document.getElementById("TableSaturdayRate") as HTMLTableCellElement).innerHTML = SaturdayRate.toFixed(2) + "/hr";
         (document.getElementById("TableSundayRate") as HTMLTableCellElement).innerHTML = SundayRate.toFixed(2) + "/hr";
         (document.getElementById("TablePublicHolidayRate") as HTMLTableCellElement).innerHTML = PublicHolidayRate.toFixed(2) + "/hr";
@@ -64,13 +84,13 @@ const ManualInterface = () => {
     }
         return (
             <>
-                <div className="grid grid-cols-3 items-start gap-8 max-w-5xl mx-auto my-1">
-                    <div>
+                <div id="InputForm" className="grid grid-cols-3 items-start gap-8 max-w-5xl mx-auto my-1">
+                    <div id="BaseRateInput">
                         <p className="text-lg font-bold mb-2">Enter Hourly Pay Rate</p>
                         <p className='text-left'>Base Hourly Rate</p>
                         <InputField placeHolder="Base Hourly Rate" inputId="BaseRate" inputType="number"/>
                     </div>
-                    <div>
+                    <div id="RateMultiplierInput">
                         <p className="text-lg font-bold mb-2">Edit Rate Multipliers</p>
                         <p className='text-left'>Weekday Multiplier</p>
                         <InputField placeHolder="Weekday Multiplier" inputId="WeekdayMultiplier" inputType="number" value="1"/>
@@ -85,7 +105,7 @@ const ManualInterface = () => {
                         <p className='text-left'>Overtime Multiplier</p>
                         <InputField placeHolder="Overtime Multiplier" inputId="OvertimeMultiplier" inputType="number" value="1.5"/>
                     </div>
-                    <div>
+                    <div id="HoursInput" className="visible">
                         <p className="text-lg font-bold mb-2">Enter Your Hours</p>
                         <p className='text-left'>Weekday Hours</p>
                         <InputField placeHolder="Weekday Hours" inputId="WeekdayHours" inputType="number"/>
@@ -99,6 +119,9 @@ const ManualInterface = () => {
                         <InputField placeHolder="Public Holiday Hours" inputId="PublicHolidayHours" inputType="number"/>
                         <p className='text-left'>Overtime Hours</p>
                         <InputField placeHolder="Overtime Hours" inputId="OvertimeHours" inputType="number"/>
+                    </div>
+                    <div id="GoogleCalendar" className="hidden">
+                        <p>gcal</p>
                     </div>
                 </div>
             <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={calculatePay}>
