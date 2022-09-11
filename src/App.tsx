@@ -13,6 +13,7 @@ function App() {
   // var hasToken = useSelector(selectHasToken);
   var hasToken = false;
   // var manual = false;
+  // const [manual, setManual] = React.useState(false);
   const [manual, setManual] = React.useState(true);
   // var hasToken = true;
   // var manual = true;
@@ -39,7 +40,7 @@ function App() {
         {/* {!hasToken && !manual && <AuthScreen manual={manual}/>} */}
         {hasToken && !manual && <CalendarInterface />}
         {!hasToken && manual && <ManualInterface />}
-        <TotalPay />
+        {(hasToken || manual) && <TotalPay />}
 
       </div>
     </div>

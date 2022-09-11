@@ -5,21 +5,14 @@ const TotalPay = () => {
 
     return (
         <>
-            <div className='grid mx-auto max-w-5xl'>
-                <table id="ResultsTable" className="table-auto hidden">
+            <div className='grid mx-auto max-w-2xl'>
+                <table id="ResultsTable" className="hidden">
                     <thead>
                         <tr>
                             <th className="px-4 py-2">Pay Type</th>
                             <th className="px-4 py-2">Hours</th>
                             <th className="px-4 py-2">Rate</th>
                             <th className="px-4 py-2">Pay</th>
-                            {/* <th className="px-4 py-2">Weekday Pay</th>
-                            <th className="px-4 py-2">Saturday Pay</th>
-                            <th className="px-4 py-2">Sunday Pay</th>
-                            <th className="px-4 py-2">Evening Pay</th>
-                            <th className="px-4 py-2">Public Holiday Pay</th>
-                            <th className="px-4 py-2">Overtime Pay</th>
-                            <th className="px-4 py-2">Total Pay</th> */}
                         </tr>
                     </thead>
                     <tbody>
@@ -59,11 +52,11 @@ const TotalPay = () => {
                             <td className="border px-4 py-2" id="TableOvertimeRate">0</td>
                             <td className="border px-4 py-2" id='OvertimePayDisplay'>$0.00</td>
                         </tr>
-                        <tr>
-                            <td className="border px-4 py-2">Total</td>
-                            <td className="border px-4 py-2" id="TableTotalHours">0</td>
-                            <td className="border px-4 py-2" id="TableTotalRate">---</td>
-                            <td className="border px-4 py-2" id='TotalPayDisplay'>$0.00</td>
+                        <tr className='border-cyan-300'>
+                            <td className="border px-4 py-2 font-bold">Total</td>
+                            <td className="border px-4 py-2 font-bold" id="TableTotalHours">0</td>
+                            <td className="border px-4 py-2 font-bold" id="TableTotalRate">---</td>
+                            <td className="border px-4 py-2 font-bold" id='TotalPayDisplay'>$0.00</td>
                         </tr>
                     </tbody>
                 </table>

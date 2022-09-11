@@ -4,12 +4,14 @@ import InputField from "../components/InputField";
 const ManualInterface = () => {
 
     function calculatePay() {
-        var BaseRate = parseFloat((document.getElementById("BaseRate") as HTMLInputElement).value) || 0;
-        var SaturdayMultiplier = parseFloat((document.getElementById("SaturdayRate") as HTMLInputElement).value) || 0;
-        var SundayMultiplier = parseFloat((document.getElementById("SundayRate") as HTMLInputElement).value) || 0;
-        var PublicHolidayMultiplier = parseFloat((document.getElementById("PublicHolidayRate") as HTMLInputElement).value) || 0;
-        var EveningMultiplier = parseFloat((document.getElementById("EveningRate") as HTMLInputElement).value) || 0;
-        var OvertimeMultiplier = parseFloat((document.getElementById("OvertimeRate") as HTMLInputElement).value) || 0;
+        var BaseRate = parseFloat((document.getElementById("BaseRate") as HTMLInputElement).value) || 30.36;
+
+        var WeekdayMultiplier = parseFloat((document.getElementById("WeekdayMultiplier") as HTMLInputElement).value) || 1.0;
+        var SaturdayMultiplier = parseFloat((document.getElementById("SaturdayMultiplier") as HTMLInputElement).value) || 0;
+        var SundayMultiplier = parseFloat((document.getElementById("SundayMultiplier") as HTMLInputElement).value) || 0;
+        var PublicHolidayMultiplier = parseFloat((document.getElementById("PublicHolidayMultiplier") as HTMLInputElement).value) || 0;
+        var EveningMultiplier = parseFloat((document.getElementById("EveningMultiplier") as HTMLInputElement).value) || 0;
+        var OvertimeMultiplier = parseFloat((document.getElementById("OvertimeMultiplier") as HTMLInputElement).value) || 0;
 
         var WeekdayHours = parseFloat((document.getElementById("WeekdayHours") as HTMLInputElement).value) || 0;
         var SaturdayHours = parseFloat((document.getElementById("SaturdayHours") as HTMLInputElement).value) || 0;
@@ -17,15 +19,15 @@ const ManualInterface = () => {
         var PublicHolidayHours = parseFloat((document.getElementById("PublicHolidayHours") as HTMLInputElement).value) || 0;
         var EveningHours = parseFloat((document.getElementById("EveningHours") as HTMLInputElement).value) || 0;
         var OvertimeHours = parseFloat((document.getElementById("OvertimeHours") as HTMLInputElement).value) || 0;
-
-        // var WeekdayRate = BaseRate;
+        
+        var WeekdayRate = BaseRate * WeekdayMultiplier;
         var SaturdayRate = BaseRate * SaturdayMultiplier;
         var SundayRate = BaseRate * SundayMultiplier;
         var PublicHolidayRate = BaseRate * PublicHolidayMultiplier;
         var EveningRate = BaseRate * EveningMultiplier;
         var OvertimeRate = BaseRate * OvertimeMultiplier;
 
-        var WeekdayPay = (BaseRate * WeekdayHours) || 0;
+        var WeekdayPay = (WeekdayRate * WeekdayHours) || 0;
         var SaturdayPay = (SaturdayRate * SaturdayHours) || 0;
         var SundayPay = (SundayRate * SundayHours) || 0;
         var PublicHolidayPay = (PublicHolidayRate * PublicHolidayHours) || 0;
@@ -34,22 +36,20 @@ const ManualInterface = () => {
 
         var TotalPay = parseFloat(WeekdayPay.toFixed(2)) + parseFloat(SaturdayPay.toFixed(2)) + parseFloat(SundayPay.toFixed(2)) + parseFloat(EveningPay.toFixed(2)) + parseFloat(PublicHolidayPay.toFixed(2)) + parseFloat(OvertimePay.toFixed(2));
 
-        console.log(WeekdayPay);
-        console.log(SaturdayPay);
-        console.log(SundayPay);
-        console.log(EveningPay);
-        console.log(PublicHolidayPay);
-        console.log(OvertimePay);
-        console.log(TotalPay);
+        (document.getElementById("TableWeekdayHours") as HTMLInputElement).innerHTML = WeekdayHours.toFixed(2);
+        (document.getElementById("TableSaturdayHours") as HTMLInputElement).innerHTML = SaturdayHours.toFixed(2);
+        (document.getElementById("TableSundayHours") as HTMLInputElement).innerHTML = SundayHours.toFixed(2);
+        (document.getElementById("TablePublicHolidayHours") as HTMLInputElement).innerHTML = PublicHolidayHours.toFixed(2);
+        (document.getElementById("TableEveningHours") as HTMLInputElement).innerHTML = EveningHours.toFixed(2);
+        (document.getElementById("TableOvertimeHours") as HTMLInputElement).innerHTML = OvertimeHours.toFixed(2);
+        (document.getElementById("TableTotalHours") as HTMLInputElement).innerHTML = (WeekdayHours + SaturdayHours + SundayHours + PublicHolidayHours + EveningHours + OvertimeHours).toFixed(2);
 
-        // (document.getElementById("WeekdayPay") as HTMLInputElement).value = WeekdayPay.toFixed(2);
-
-        (document.getElementById("TableWeekdayRate") as HTMLTableCellElement).innerHTML = BaseRate.toFixed(2);
-        (document.getElementById("TableSaturdayRate") as HTMLTableCellElement).innerHTML = SaturdayRate.toFixed(2);
-        (document.getElementById("TableSundayRate") as HTMLTableCellElement).innerHTML = SundayRate.toFixed(2);
-        (document.getElementById("TablePublicHolidayRate") as HTMLTableCellElement).innerHTML = PublicHolidayRate.toFixed(2);
-        (document.getElementById("TableEveningRate") as HTMLTableCellElement).innerHTML = EveningRate.toFixed(2);
-        (document.getElementById("TableOvertimeRate") as HTMLTableCellElement).innerHTML = OvertimeRate.toFixed(2);
+        (document.getElementById("TableWeekdayRate") as HTMLTableCellElement).innerHTML = BaseRate.toFixed(2) + "/hr";
+        (document.getElementById("TableSaturdayRate") as HTMLTableCellElement).innerHTML = SaturdayRate.toFixed(2) + "/hr";
+        (document.getElementById("TableSundayRate") as HTMLTableCellElement).innerHTML = SundayRate.toFixed(2) + "/hr";
+        (document.getElementById("TablePublicHolidayRate") as HTMLTableCellElement).innerHTML = PublicHolidayRate.toFixed(2) + "/hr";
+        (document.getElementById("TableEveningRate") as HTMLTableCellElement).innerHTML = EveningRate.toFixed(2) + "/hr";
+        (document.getElementById("TableOvertimeRate") as HTMLTableCellElement).innerHTML = OvertimeRate.toFixed(2) + "/hr";
         
         (document.getElementById("WeekdayPayDisplay") as HTMLInputElement).innerHTML = "$" + WeekdayPay.toFixed(2).toString();
         (document.getElementById("SaturdayPayDisplay") as HTMLInputElement).innerHTML = "$" + SaturdayPay.toFixed(2).toString();
@@ -58,11 +58,10 @@ const ManualInterface = () => {
         (document.getElementById("PublicHolidayPayDisplay") as HTMLInputElement).innerHTML = "$" + PublicHolidayPay.toFixed(2).toString();
         (document.getElementById("OvertimePayDisplay") as HTMLInputElement).innerHTML = "$" + OvertimePay.toFixed(2).toString();
         (document.getElementById("TotalPayDisplay") as HTMLInputElement).innerHTML = "$" + TotalPay.toFixed(2).toString();
-        (document.getElementById("ResultsTable") as HTMLTableElement).className = "table-auto visible";
+
+        (document.getElementById("ResultsTable") as HTMLTableElement).className = "table-fixed visible border-collapse";
 
     }
-    // if an int, convert to 2dp float, or truncat to 2dp float
-    
         return (
             <>
                 <div className="grid grid-cols-3 items-start gap-8 max-w-5xl mx-auto my-1">
@@ -72,17 +71,19 @@ const ManualInterface = () => {
                         <InputField placeHolder="Base Hourly Rate" inputId="BaseRate" inputType="number"/>
                     </div>
                     <div>
-                        <p className="text-lg font-bold mb-2">Enter Rate Multipliers</p>
-                        <p className='text-left'>Saturday Multiplier (1.2x by default)</p>
-                        <InputField placeHolder="Saturday Multiplier" inputId="SaturdayRate" inputType="number" value="1.2"/>
-                        <p className='text-left'>Sunday Multiplier (1.4x by default)</p>
-                        <InputField placeHolder="Sunday Multiplier" inputId="SundayRate" inputType="number" value="1.4"/>
-                        <p className='text-left'>Evening Multiplier (0.2x by default)</p>
-                        <InputField placeHolder="Evening Multiplier" inputId="EveningRate" inputType="number" value="0.2"/>
-                        <p className='text-left'>Public Holiday Multiplier (2x by default)</p>
-                        <InputField placeHolder="Public Holiday Multiplier" inputId="PublicHolidayRate" inputType="number" value="2"/>
-                        <p className='text-left'>Overtime Multiplier (1.5x by default)</p>
-                        <InputField placeHolder="Overtime Multiplier" inputId="OvertimeRate" inputType="number" value="1.5"/>
+                        <p className="text-lg font-bold mb-2">Edit Rate Multipliers</p>
+                        <p className='text-left'>Weekday Multiplier</p>
+                        <InputField placeHolder="Weekday Multiplier" inputId="WeekdayMultiplier" inputType="number" value="1"/>
+                        <p className='text-left'>Saturday Multiplier</p>
+                        <InputField placeHolder="Saturday Multiplier" inputId="SaturdayMultiplier" inputType="number" value="1.2"/>
+                        <p className='text-left'>Sunday Multiplier</p>
+                        <InputField placeHolder="Sunday Multiplier" inputId="SundayMultiplier" inputType="number" value="1.4"/>
+                        <p className='text-left'>Evening Multiplier</p>
+                        <InputField placeHolder="Evening Multiplier" inputId="EveningMultiplier" inputType="number" value="0.2"/>
+                        <p className='text-left'>Public Holiday Multiplier</p>
+                        <InputField placeHolder="Public Holiday Multiplier" inputId="PublicHolidayMultiplier" inputType="number" value="2"/>
+                        <p className='text-left'>Overtime Multiplier</p>
+                        <InputField placeHolder="Overtime Multiplier" inputId="OvertimeMultiplier" inputType="number" value="1.5"/>
                     </div>
                     <div>
                         <p className="text-lg font-bold mb-2">Enter Your Hours</p>
