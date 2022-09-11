@@ -4,7 +4,7 @@ interface MyProps {
     manual: boolean;
 }
 // const AuthScreen
-const ManualInterface: React.FC<MyProps> = (props: MyProps) => {
+const InputForm: React.FC<MyProps> = (props: MyProps) => {
 
     function calculatePay() {
         var BaseRate = parseFloat((document.getElementById("BaseRate") as HTMLInputElement).value) || 30.36;
@@ -132,4 +132,4 @@ const ManualInterface: React.FC<MyProps> = (props: MyProps) => {
             </>
         );
     }
-export default ManualInterface;
+export default InputForm;
