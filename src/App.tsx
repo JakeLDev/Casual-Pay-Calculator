@@ -12,27 +12,24 @@ function App() {
 
   // var hasToken = useSelector(selectHasToken);
   var hasToken = false;
-  var calendar = false;
+  const [calendar, setCalendar] = React.useState(false);
   // var begin = false;
-  const [begin, setBegin] = React.useState(false);
+  // const [begin, setBegin] = React.useState(false);
+  const [begin, setBegin] = React.useState(true);
 
   const start = () => {
-    console.log(begin);
     setBegin(true);
-    console.log(begin);
     (document.getElementById("CalendarToggle") as HTMLButtonElement).className = "bg-cyan-600 hover:bg-cyan-800 text-white font-bold my-2 py-2 px-4 rounded-full";
     (document.getElementById("StartButton") as HTMLButtonElement).className = "hidden";
   }
 
   const toggleCalendar = () => {
-    calendar = !calendar;
-    if (calendar) {
-      // (document.getElementById("InputForm") as HTMLDivElement).className = "grid grid-cols-3 items-start gap-8 max-w-5xl mx-auto my-1";
+    setCalendar(!calendar);
+    if (!calendar) {
       (document.getElementById("CalendarToggle") as HTMLButtonElement).innerHTML = "Enter Shifts Manually";
       (document.getElementById("HoursInput") as HTMLDivElement).className = "hidden";
       (document.getElementById("GoogleCalendar") as HTMLDivElement).className = "visible";
     } else {
-      // (document.getElementById("InputForm") as HTMLDivElement).className = "grid grid-cols-3 items-start gap-8 max-w-5xl mx-auto my-1";
       (document.getElementById("CalendarToggle") as HTMLButtonElement).innerHTML = "Read Google Calendar";
       (document.getElementById("HoursInput") as HTMLDivElement).className = "visible";
       (document.getElementById("GoogleCalendar") as HTMLDivElement).className = "hidden";
