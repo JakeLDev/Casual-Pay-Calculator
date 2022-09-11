@@ -1,10 +1,8 @@
 import React from 'react';
 // import { useSelector } from 'react-redux';
 import './App.css';
-// import AuthScreen from './Pages/AuthScreen';
-import CalendarInterface from './Pages/CalendarInterface';
-import InputForm from './Pages/InputForm';
-import TotalPay from './Pages/TotalPay';
+import InputForm from './components/InputForm/InputForm';
+import TotalPay from './components/TotalPay/TotalPay';
 
 
 

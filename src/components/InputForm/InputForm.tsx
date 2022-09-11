@@ -1,6 +1,6 @@
 import React from "react";
-import InputField from "../components/InputField";
-import { calculatePay } from "../Functions/calculatePay";
+import InputField from "../InputField";
+import { calculatePay } from "../../Functions/calculatePay";
 interface MyProps {
     manual: boolean;
 }
