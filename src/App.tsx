@@ -12,8 +12,8 @@ function App() {
   var hasToken = false;
   const [calendar, setCalendar] = React.useState(false);
   // var begin = false;
-  // const [begin, setBegin] = React.useState(false);
-  const [begin, setBegin] = React.useState(true);
+  const [begin, setBegin] = React.useState(false);
+  // const [begin, setBegin] = React.useState(true);
 
   const start = () => {
     setBegin(true);

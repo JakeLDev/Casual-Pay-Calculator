@@ -1,11 +1,28 @@
 import React from "react";
+import { encode } from 'qss';
+
 import InputField from "../InputField";
 import { calculatePay } from "../../Functions/calculatePay";
+import logo from "../Images/google_auth.png";
 interface MyProps {
     manual: boolean;
 }
-// const AuthScreen
+const googleClientId = '440071859159-mdbsqoofftpqfpdrauii7tghheg0ak5p.apps.googleusercontent.com';
+const googleScope =
+  'https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar.events.readonly';
+
 const InputForm: React.FC<MyProps> = (props: MyProps) => {
+
+    const getGoogleAuthUrl = () => {
+        const params = encode({
+          client_id: googleClientId,
+          redirect_uri: window.location.origin,
+          scope: googleScope,
+          response_type: 'token',
+        });
+    
+        return `https://accounts.google.com/o/oauth2/auth?${params}`;
+      };
 
         return (
             <>
@@ -47,6 +64,9 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                     </div>
                     <div id="GoogleCalendar" className="hidden">
                         <p>gcal</p>
+                        <a href={getGoogleAuthUrl()} data-testid="AuthLink">
+                            <img src={logo} alt="Auth with Google" width="191" height="46" />
+                        </a>
                     </div>
                 </div>
             <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => calculatePay(props.manual)}>
