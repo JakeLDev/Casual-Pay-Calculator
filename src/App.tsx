@@ -1,24 +1,30 @@
-import React from 'react';
-import { Provider, useSelector } from 'react-redux';
-import { selectHasToken } from './stores/authentication';
-import store from './stores';
-
+// import React from 'react';
+// import { Provider, useSelector } from 'react-redux';
+// import { selectAccessToken } from './stores/authentication'
+// import { getMyGoogleCalendarsList } from './stores/calendarApi'
 
 import './App.css';
 import InputForm from './components/InputForm/InputForm';
 import TotalPay from './components/TotalPay/TotalPay';
 
+import React, { useState, useEffect } from "react";
+// import { getMyGoogleCalendarsList } from "./calendarApi";
+// import { setTokens } from "./stores/tokens";
+
 
 
 const App = () => {
 
-  const hasToken = useSelector(selectHasToken);
+  // const hasToken = useSelector(selectHasToken);
+  // accessToken = selectAccessToken(getState());
+  var hasToken = false;
   // console.log(hasToken);
-  // var hasToken = false;
+  // getMyGoogleCalendarsList();
   const [calendar, setCalendar] = React.useState(false);
   // var begin = false;
   const [begin, setBegin] = React.useState(false);
   // const [begin, setBegin] = React.useState(true);
+
 
   const start = () => {
     setBegin(true);
@@ -40,7 +46,7 @@ const App = () => {
   }
 
   return (
-    <Provider store={store()}>
+    // <Provider store={store()}>
       <div className="App p-5 h-screen dark:bg-zinc-800 dark:text-gray-400">
         <div className="Container">
           <h1 className="text-4xl font-bold m-2 text-gray-300">  
@@ -69,7 +75,7 @@ const App = () => {
 
         </div>
       </div>
-    </Provider>
+    // </Provider>
   );
 }
 
