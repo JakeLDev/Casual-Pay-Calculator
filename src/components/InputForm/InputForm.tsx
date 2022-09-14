@@ -14,15 +14,30 @@ interface MyProps {
 const InputForm: React.FC<MyProps> = (props: MyProps) => {
 
     const handleLogIn = () => {
-      console.log(process.env.REACT_APP_API_KEY);
+      // console.log(process.env.REACT_APP_API_KEY);
+      // console.log(apiCalendar.tokenClient);
       apiCalendar.handleAuthClick();
-      printEvents();
+      // console.log(apiCalendar.tokenClient);
+      // console.log(apiCalendar.config);
+      // (document.getElementById("GoogleLogin") as HTMLButtonElement).className = "hidden";
     };
     
     const printEvents = () => {
-      apiCalendar.listUpcomingEvents(10).then(({ result }: any) => {
+      console.log(apiCalendar.tokenClient);
+      console.log(apiCalendar.config);
+      apiCalendar.listUpcomingEvents(50).then(({ result }: any) => {
         console.log(result.items);
       });
+      var yearFromNow = new Date();
+      yearFromNow.setDate(yearFromNow.getDate() + 365);
+
+      apiCalendar.listEvents({timeMin: '2021-01-01T00:00:00Z', 
+                              timeMax: yearFromNow.toISOString(), 
+                              MaxResults: 500}
+                              ).then(({ result }: any) => {
+        console.log(result.items);
+      }
+      );
     };
       
 
@@ -67,9 +82,10 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                     <div id="GoogleCalendar" className="hidden">
                         <p>gcal</p>
                         {/* <a href={getGoogleAuthUrl()} data-testid="AuthLink"> */}
-                        <button onClick={() => handleLogIn()}>
+                        <button id="GoogleLogin" onClick={() => handleLogIn()}>
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
                         </button>
+                        <button onClick={() => printEvents()}>printEvents</button>
                     </div>
                 </div>
             <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => calculatePay(props.manual)}>
