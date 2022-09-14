@@ -1,0 +1,46 @@
+{
+    "kind": "calendar#event",
+    "etag": "\"3312129469297000\"",
+    "id": "_60s36ga36ss44b9i8go3ib9k7133aba1651j8ba271242cq66p2k2g9i6c",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=XzYwczM2Z2EzNnNzNDRiOWk4Z28zaWI5azcxMzNhYmExNjUxajhiYTI3MTI0MmNxNjZwMmsyZzlpNmMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-24T09:58:54.000Z",
+    "updated": "2022-06-24T09:58:54.694Z",
+    "summary": "EB Games Shift",
+    "creator": {
+        "email": "jakeldeveloper@gmail.com",
+        "self": true
+    },
+    "organizer": {
+        "email": "jakeldeveloper@gmail.com",
+        "self": true
+    },
+    "start": {
+        "dateTime": "2022-06-25T08:45:00+08:00",
+        "timeZone": "Australia/Perth"
+    },
+    "end": {
+        "dateTime": "2022-06-25T17:15:00+08:00",
+        "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "083AC78B-2D09-48F5-A1C4-B8DA3F6EAA23",
+    "sequence": 0,
+    "reminders": {
+        "useDefault": false,
+        "overrides": [
+            {
+                "method": "popup",
+                "minutes": 30
+            },
+            {
+                "method": "popup",
+                "minutes": 300
+            },
+            {
+                "method": "popup",
+                "minutes": 1440
+            }
+        ]
+    },
+    "eventType": "default"
+}

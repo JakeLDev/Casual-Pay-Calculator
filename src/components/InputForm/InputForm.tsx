@@ -13,6 +13,8 @@ interface MyProps {
 
 const InputForm: React.FC<MyProps> = (props: MyProps) => {
 
+    var Events = [];
+
     const handleLogIn = () => {
       // console.log(process.env.REACT_APP_API_KEY);
       // console.log(apiCalendar.tokenClient);
@@ -21,6 +23,28 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
       // console.log(apiCalendar.config);
       // (document.getElementById("GoogleLogin") as HTMLButtonElement).className = "hidden";
     };
+
+    const getAllEvents = () => {
+
+      apiCalendar.listEvents({singleEvents: true,
+                              MaxResults: 1000,
+                              orderBy: 'startTime'})
+                              .then(({ result }: any) => {
+        Events = result.items;
+        // console.log(result.items); // This is an array of 500 events from the start of 2021 to a year from now
+      });
+    };
+
+    const filterEvents = (events: any, rangeStart:Date, rangeEnd:Date, eventDesc:String) => { //use filter funciton https://stackoverflow.com/questions/2722159/how-to-filter-object-array-based-on-attributes
+      var filteredEvents = [];
+      for (var i = 0; i < events.length; i++) {
+        if (events[i].summary.includes(eventDesc) && events[i].start.dateTime >= rangeStart && events[i].end.dateTime <= rangeEnd){
+          filteredEvents.push(events[i]);
+        }
+      }
+      return filteredEvents;
+    };
+
     
     const printEvents = () => {
       console.log(apiCalendar.tokenClient);
@@ -31,11 +55,11 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
       var yearFromNow = new Date();
       yearFromNow.setDate(yearFromNow.getDate() + 365);
 
-      apiCalendar.listEvents({timeMin: '2021-01-01T00:00:00Z', 
-                              timeMax: yearFromNow.toISOString(), 
-                              MaxResults: 500}
-                              ).then(({ result }: any) => {
-        console.log(result.items);
+      apiCalendar.listEvents({singleEvents: true,
+                              MaxResults: 500,
+                              orderBy: 'startTime'})
+                              .then(({ result }: any) => {
+        console.log(result.items); // This is an array of 500 events from the start of 2021 to a year from now
       }
       );
     };
