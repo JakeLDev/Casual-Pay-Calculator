@@ -13,7 +13,7 @@ interface MyProps {
 
 const InputForm: React.FC<MyProps> = (props: MyProps) => {
 
-    var Events = [];
+    // var Events: any[] = [];
 
     const handleLogIn = () => {
       // console.log(process.env.REACT_APP_API_KEY);
@@ -30,38 +30,63 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                               MaxResults: 1000,
                               orderBy: 'startTime'})
                               .then(({ result }: any) => {
-        Events = result.items;
+        // Events = result.items;
+        sessionStorage.setItem('Events', JSON.stringify(result.items));
+        // console.log(sessionStorage.getItem('Events'));
+        // console.log(JSON.parse(sessionStorage.getItem('Events') || '[]'));
+        // console.log(JSON.parse(sessionStorage.Events));
+        document.getElementById("GetEvents")!.className = "hidden";
+        console.log("Events Fetched!");
         // console.log(result.items); // This is an array of 500 events from the start of 2021 to a year from now
-      });
+      }); //TODO catch errors
     };
 
-    const filterEvents = (events: any, rangeStart:Date, rangeEnd:Date, eventDesc:String) => { //use filter funciton https://stackoverflow.com/questions/2722159/how-to-filter-object-array-based-on-attributes
-      var filteredEvents = [];
-      for (var i = 0; i < events.length; i++) {
-        if (events[i].summary.includes(eventDesc) && events[i].start.dateTime >= rangeStart && events[i].end.dateTime <= rangeEnd){
-          filteredEvents.push(events[i]);
-        }
-      }
+    const filterEvents = (rangeStart:Date, rangeEnd:Date, eventDesc:String) => { //use filter funciton https://stackoverflow.com/questions/2722159/how-to-filter-object-array-based-on-attributes
+      //TODO get dates and event description from user input
+
+      var rangeStart = new Date(new Date().getFullYear(), 0, 1); //TODO remove 
+      // var rangeStart = new Date()
+      var rangeEnd = new Date(new Date().getFullYear(), 11, 31);
+
+      var events = JSON.parse(sessionStorage.Events);
+      console.log(events);
+      console.log(rangeStart, rangeEnd, eventDesc);
+      // var filteredEvents = events.filter( (x: { start: { dateTime: Date; }; summary: String[]; }) => x.start.dateTime >= rangeStart && x.start.dateTime <= rangeEnd && x.summary.includes(eventDesc));
+      const filteredEvents = events.filter( (x: { start: { dateTime: string; }; summary: String[]; }) => 
+                                              x.summary.includes(eventDesc) && 
+                                              new Date(x.start.dateTime) >= rangeStart && 
+                                              new Date(x.start.dateTime) <= rangeEnd);
+      console.log(filteredEvents);
       return filteredEvents;
     };
 
+    const getUniqueEvents = () => { //TODO do later, allow user input for now
+      var events = JSON.parse(sessionStorage.Events);
+      // const uniqueSummaries = [...new Set<any>( events.map((obj: { summary: string; }) => obj.summary)) ];
+      console.log(events);
+      var Uniquesummaries = new Set(events.map((obj: { summary: string; }) => obj.summary));
+      console.log(Uniquesummaries);
+    }
+
+
     
     const printEvents = () => {
-      console.log(apiCalendar.tokenClient);
-      console.log(apiCalendar.config);
-      apiCalendar.listUpcomingEvents(50).then(({ result }: any) => {
-        console.log(result.items);
-      });
-      var yearFromNow = new Date();
-      yearFromNow.setDate(yearFromNow.getDate() + 365);
+      // console.log(apiCalendar.tokenClient);
+      // console.log(apiCalendar.config);
+      // apiCalendar.listUpcomingEvents(50).then(({ result }: any) => {
+      // console.log(result.items);
+      // });
+      // var yearFromNow = new Date();
+      // yearFromNow.setDate(yearFromNow.getDate() + 365);
 
-      apiCalendar.listEvents({singleEvents: true,
-                              MaxResults: 500,
-                              orderBy: 'startTime'})
-                              .then(({ result }: any) => {
-        console.log(result.items); // This is an array of 500 events from the start of 2021 to a year from now
-      }
-      );
+      // apiCalendar.listEvents({singleEvents: true,
+      //                         MaxResults: 500,
+      //                         orderBy: 'startTime'})
+      //                         .then(({ result }: any) => {
+      //   console.log(result.items); // This is an array of 500 events from the start of 2021 to a year from now
+      // }
+      // );
+      console.log(JSON.parse(sessionStorage.Events));
     };
       
 
@@ -109,7 +134,13 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                         <button id="GoogleLogin" onClick={() => handleLogIn()}>
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
                         </button>
-                        <button onClick={() => printEvents()}>printEvents</button>
+                        <button id="GetEvents" className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => getAllEvents()}>Get Events</button>
+
+                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => printEvents()}>printEvents</button>
+                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => filterEvents(new Date(), new Date(), "EB Games Shift")}>filterEvents</button>
+                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => getUniqueEvents()}>uniqueEvents</button>
+
+
                     </div>
                 </div>
             <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => calculatePay(props.manual)}>
