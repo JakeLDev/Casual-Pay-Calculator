@@ -39,7 +39,7 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
         console.log("Events Fetched!");
         // console.log(result.items); // This is an array of 500 events from the start of 2021 to a year from now
       }); //TODO catch errors
-    };
+    }; //TODO throw alert if user tries to filter events before fetching them
 
     const filterEvents = (rangeStart:Date, rangeEnd:Date, eventDesc:String) => { //use filter funciton https://stackoverflow.com/questions/2722159/how-to-filter-object-array-based-on-attributes
       //TODO get dates and event description from user input
@@ -130,11 +130,12 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                     </div>
                     <div id="GoogleCalendar" className="hidden">
                         <p>gcal</p>
+                        {sessionStorage.Events && <p>Events are in session storage!</p>}
                         {/* <a href={getGoogleAuthUrl()} data-testid="AuthLink"> */}
                         <button id="GoogleLogin" onClick={() => handleLogIn()}>
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
                         </button>
-                        <button id="GetEvents" className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => getAllEvents()}>Get Events</button>
+                        <button id="GetEvents" className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => getAllEvents()}>Get Events</button> {/* TODO Show button after log in */}
 
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => printEvents()}>printEvents</button>
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => filterEvents(new Date(), new Date(), "EB Games Shift")}>filterEvents</button>
