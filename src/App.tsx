@@ -8,6 +8,7 @@ import InputForm from './components/InputForm/InputForm';
 import TotalPay from './components/TotalPay/TotalPay';
 
 import React, { useState, useEffect } from "react";
+import { showCalendars } from './Functions/showCalendars';
 // import { getMyGoogleCalendarsList } from "./calendarApi";
 // import { setTokens } from "./stores/tokens";
 
@@ -37,7 +38,8 @@ const App = () => {
     if (!calendar) {
       (document.getElementById("CalendarToggle") as HTMLButtonElement).innerHTML = "Enter Shifts Manually";
       (document.getElementById("HoursInput") as HTMLDivElement).className = "hidden";
-      (document.getElementById("GoogleCalendar") as HTMLDivElement).className = "visible";
+      (document.getElementById("GoogleCalendar") as HTMLDivElement).className = "visible block";
+      showCalendars();
     } else {
       (document.getElementById("CalendarToggle") as HTMLButtonElement).innerHTML = "Read Google Calendar";
       (document.getElementById("HoursInput") as HTMLDivElement).className = "visible";

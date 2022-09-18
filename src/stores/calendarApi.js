@@ -10,3 +10,6 @@ const config = {
 }
 
 export const apiCalendar = new ApiCalendar(config)
+
+// apiCalendar.setCalendar("en.australian#holiday@group.v.calendar.google.com");
+

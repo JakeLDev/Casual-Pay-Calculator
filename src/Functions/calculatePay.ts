@@ -25,7 +25,7 @@ export function calculatePay(manual: boolean) {
         EveningHours = parseFloat((document.getElementById("EveningHours") as HTMLInputElement).value) || 0;
         OvertimeHours = parseFloat((document.getElementById("OvertimeHours") as HTMLInputElement).value) || 0;
     } else {
-        // Replace with Google Calendar
+        //TODO Replace with Google Calendar
         WeekdayHours = 0;
         SaturdayHours = 0;
         SundayHours = 0;
