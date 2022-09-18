@@ -14,8 +14,8 @@ export function showCalendars() {
         var calendarDropdown = document.getElementById("CalendarDropdown") as HTMLSelectElement;
         calendarDropdown.innerHTML = "";
         var option = document.createElement("option");
-        option.text = "No calendars found";
-        option.value = "No calendars found";
+        option.text = "Sign in to fetch calendars";
+        option.value = "Sign in to fetch calendars";
         calendarDropdown.add(option);
         console.log("No calendars found");
     }

@@ -1,4 +1,8 @@
 /* eslint-disable */
+import { sumHours } from './sumHours';
+import { filterEvents } from './filterEvents';
+import { calculateHours } from './calculateHours';
+
 export function calculatePay(manual: boolean) {
     
     var BaseRate = parseFloat((document.getElementById("BaseRate") as HTMLInputElement).value) || 30.36;
@@ -26,12 +30,18 @@ export function calculatePay(manual: boolean) {
         OvertimeHours = parseFloat((document.getElementById("OvertimeHours") as HTMLInputElement).value) || 0;
     } else {
         //TODO Replace with Google Calendar
-        WeekdayHours = 0;
-        SaturdayHours = 0;
-        SundayHours = 0;
-        PublicHolidayHours = 0;
-        EveningHours = 0;
-        OvertimeHours = 0;
+        // Filter events by summary and date, return as array of events
+        // Loop over events counting the number of hours - calculate, or count from previous counts
+        var filteredList = filterEvents(new Date(), new Date(), "EB Games Shift"); //TODO FIX
+        calculateHours(filteredList);
+        var summedHours = sumHours(filteredList);
+        
+        WeekdayHours = summedHours.weekdayHours;
+        SaturdayHours = summedHours.saturdayHours;
+        SundayHours = summedHours.sundayHours;
+        PublicHolidayHours = summedHours.publicHolidayHours;
+        EveningHours = summedHours.eveningHours;
+        OvertimeHours = summedHours.overtimeHours;
     }
     
     var WeekdayRate = BaseRate * WeekdayMultiplier;
