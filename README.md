@@ -10,3 +10,5 @@ Web app to calculate casual pay on a weekly/monthly basis, can use google calend
 -allow user to enter payrate, penalty rates, tax rate etc
 
 -output info like average weekly pay, average shift length, shifts per week etc
+
+allow selecting current pay period

@@ -3,9 +3,13 @@ import { parseEvents } from './parseEvents';
 export function filterEvents(rangeStart:Date, rangeEnd:Date, eventDesc:String) {
     //TODO get dates and event description from user input
 
-    var rangeStart = new Date(new Date().getFullYear(), 0, 1); //TODO remove 
+    // var rangeStart = new Date(new Date().getFullYear(), 0, 1); //TODO remove 
     // var rangeStart = new Date()
-    var rangeEnd = new Date(new Date().getFullYear(), 11, 31);
+    // var rangeEnd = new Date(new Date().getFullYear(), 11, 31);
+
+    // get date of start of pay period 11-24
+    // rangeStart = new Date("2022-09-11");
+    // rangeEnd = new Date("2022-09-24");
 
     var events = parseEvents();
     console.log(events);

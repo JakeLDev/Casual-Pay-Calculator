@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-// import { getMyGoogleCalendarsList } from '../../stores/calendarApi'
 
-import { encode } from 'qss';
+import DateRangePicker from '@wojtekmaj/react-daterange-picker';
+import "../../DateRangePickerDark.css";
 
 import { calculatePay } from "../../Functions/calculatePay";
 import logo from "../Images/google_auth.png";
 import { apiCalendar } from "../../stores/calendarApi";
-import { Dictionary } from "@reduxjs/toolkit";
 import InputField from "../InputField";
 import { showCalendars } from "../../Functions/showCalendars";
 import { parseEvents } from "../../Functions/parseEvents";
@@ -16,12 +15,20 @@ import { listCalendars } from "../../Functions/listCalendars";
 import { calculateHours } from "../../Functions/calculateHours";
 import { getAllEvents } from "../../Functions/getAllEvents";
 import { getUniqueEvents } from "../../Functions/getUniqueEvents";
+import { createTimeRange } from "../../Functions/createTimeRange";
 
+// import DateRangePicker from '@wojtekmaj/react-daterange-picker'
 interface MyProps {
     manual: boolean;
 };
 
 const InputForm: React.FC<MyProps> = (props: MyProps) => {
+
+    const [value, updateValue] = useState("");
+    const onChange = (date:any) => {
+        updateValue(date);
+      }
+
 
     // var Events: any[] = [];
 
@@ -79,22 +86,36 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                         <button className="block mx-auto my-2" id="GoogleLogin" onClick={() => handleLogIn()}>
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
                         </button>
-                        <button id="GetEvents" className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => getAllEvents(apiCalendar)}>Get Events</button> {/* TODO Show button after log in */}
+                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => listCalendars(apiCalendar)}>listCalendars</button>
+                        <select name="Calendars" id="CalendarDropdown" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent"></select>
+
+                        <select name="timePeriod" id="timePeriod" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" onChange={() => createTimeRange([value])}>
+                            <option value="Day">Day</option>
+                            <option value="Week">Week</option>
+                            <option value="Month">Month</option>
+                            <option value="Year">Year</option>
+                            <option value="Total">Total</option>
+                            <option value="Custom">Custom</option>
+                        </select>
+                        <div id="datePicker" className="hidden">
+                            <DateRangePicker className="bg-white text-gray-900 py-2 px-4 w-full rounded-lg block mx-auto my-2" onChange={onChange} value={value} format={"dd/MM/yy"} /> 
+                        </div>
+
+                        <button id="GetEvents" className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => getAllEvents(apiCalendar)}>Get Events</button>
 
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => printEvents()}>printEvents</button>
-                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => filterEvents(new Date(), new Date(), "EB Games Shift")}>filterEvents</button>
+                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => filterEvents(new Date(value[0]), new Date(value[1]), "EB Games Shift")}>filterEvents</button>
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => getUniqueEvents()}>uniqueEvents</button>
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => calculateHours(2)}>eventHours</button>
-                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => listCalendars(apiCalendar)}>listCalendars</button>
-                        {/* list of calendars */}
-                        <select name="Calendars" id="CalendarDropdown" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent">
+                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => createTimeRange([value])}>createTimeRange</button>
 
-                        </select>
+
+
 
 
                     </div>
                 </div>
-            <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => calculatePay(props.manual)}>
+            <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => calculatePay(props.manual, [value])}>
                 Calculate Pay
             </button>
             

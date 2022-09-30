@@ -2,8 +2,9 @@
 import { sumHours } from './sumHours';
 import { filterEvents } from './filterEvents';
 import { calculateHours } from './calculateHours';
+import { createTimeRange } from './createTimeRange';
 
-export function calculatePay(manual: boolean) {
+export function calculatePay(manual: boolean, dates: string[]) {
     
     var BaseRate = parseFloat((document.getElementById("BaseRate") as HTMLInputElement).value) || 30.36;
 
@@ -29,10 +30,15 @@ export function calculatePay(manual: boolean) {
         EveningHours = parseFloat((document.getElementById("EveningHours") as HTMLInputElement).value) || 0;
         OvertimeHours = parseFloat((document.getElementById("OvertimeHours") as HTMLInputElement).value) || 0;
     } else {
-        //TODO Replace with Google Calendar
         // Filter events by summary and date, return as array of events
         // Loop over events counting the number of hours - calculate, or count from previous counts
-        var filteredList = filterEvents(new Date(), new Date(), "EB Games Shift"); //TODO FIX
+        // console.log("dates", dates);
+        // console.log(dates[0][0]);
+        var dateRange = createTimeRange(dates); // TODO show the user which dates are being used
+        var startDate = dateRange[0];
+        var endDate = dateRange[1];
+        var filteredList = filterEvents(startDate, endDate, "EB Games Shift"); //TODO FIX
+        // var filteredList = filterEvents(new Date(), new Date(), "EB Games Shift");
         calculateHours(filteredList);
         var summedHours = sumHours(filteredList);
         
