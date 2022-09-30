@@ -17,6 +17,8 @@ export function createTimeRange(dates: string[]) {
         rangeEnd = new Date();
         rangeStart.setDate(rangeStart.getDate() - rangeStart.getDay());
         rangeEnd.setDate(rangeEnd.getDate() + (6 - rangeEnd.getDay()));
+        rangeStart.setTime(rangeStart.getTime() - (rangeStart.getHours() * 60 * 60 * 1000) - (rangeStart.getMinutes() * 60 * 1000) - (rangeStart.getSeconds() * 1000));
+        rangeEnd.setTime(rangeEnd.getTime() + (23 - rangeEnd.getHours()) * 60 * 60 * 1000 + (59 - rangeEnd.getMinutes()) * 60 * 1000 + (59 - rangeEnd.getSeconds()) * 1000);
         document.getElementById("datePicker")!.className = "hidden";
     } else if (selection === "Month") {
         rangeStart = new Date();
@@ -24,6 +26,8 @@ export function createTimeRange(dates: string[]) {
         rangeStart.setDate(1);
         rangeEnd.setMonth(rangeEnd.getMonth() + 1);
         rangeEnd.setDate(0);
+        rangeStart.setTime(rangeStart.getTime() - (rangeStart.getHours() * 60 * 60 * 1000) - (rangeStart.getMinutes() * 60 * 1000) - (rangeStart.getSeconds() * 1000));
+        rangeEnd.setTime(rangeEnd.getTime() + (23 - rangeEnd.getHours()) * 60 * 60 * 1000 + (59 - rangeEnd.getMinutes()) * 60 * 1000 + (59 - rangeEnd.getSeconds()) * 1000);
         document.getElementById("datePicker")!.className = "hidden";
     } else if (selection === "Year") {
         rangeStart = new Date();
@@ -32,6 +36,8 @@ export function createTimeRange(dates: string[]) {
         rangeStart.setDate(1);
         rangeEnd.setMonth(11);
         rangeEnd.setDate(31);
+        rangeStart.setTime(rangeStart.getTime() - (rangeStart.getHours() * 60 * 60 * 1000) - (rangeStart.getMinutes() * 60 * 1000) - (rangeStart.getSeconds() * 1000));
+        rangeEnd.setTime(rangeEnd.getTime() + (23 - rangeEnd.getHours()) * 60 * 60 * 1000 + (59 - rangeEnd.getMinutes()) * 60 * 1000 + (59 - rangeEnd.getSeconds()) * 1000);
         document.getElementById("datePicker")!.className = "hidden";
     } else if (selection === "Total") {
         rangeStart = new Date("2000-01-01");

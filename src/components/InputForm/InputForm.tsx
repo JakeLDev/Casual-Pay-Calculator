@@ -86,8 +86,8 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                         <button className="block mx-auto my-2" id="GoogleLogin" onClick={() => handleLogIn()}>
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
                         </button>
-                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => listCalendars(apiCalendar)}>listCalendars</button>
-                        <select name="Calendars" id="CalendarDropdown" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent"></select>
+                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => listCalendars(apiCalendar)}>Fetch User Calendars</button>
+                        <select name="Calendars" id="CalendarDropdown" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" onChange={() => getAllEvents(apiCalendar)}></select>
 
                         <select name="timePeriod" id="timePeriod" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" onChange={() => createTimeRange([value])}>
                             <option value="Day">Day</option>
@@ -103,13 +103,13 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
 
                         <InputField placeHolder="Name of Shifts in Calendar" inputId="EventName" inputType="string"/>
 
-                        <button id="GetEvents" className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => getAllEvents(apiCalendar)}>Get Events</button>
+                        {/* <button id="GetEvents" className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => getAllEvents(apiCalendar)}>Get Events</button> */}
 
-                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => printEvents()}>printEvents</button>
+                        {/* <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => printEvents()}>printEvents</button>
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => filterEvents(new Date(value[0]), new Date(value[1]), "EB Games Shift")}>filterEvents</button>
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => getUniqueEvents()}>uniqueEvents</button>
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => calculateHours(2)}>eventHours</button>
-                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => createTimeRange([value])}>createTimeRange</button>
+                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => createTimeRange([value])}>createTimeRange</button> */}
 
 
 

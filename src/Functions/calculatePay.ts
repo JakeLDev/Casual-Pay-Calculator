@@ -38,7 +38,7 @@ export function calculatePay(manual: boolean, dates: string[]) {
         var startDate = dateRange[0];
         var endDate = dateRange[1];
         var eventName = (document.getElementById("EventName") as HTMLInputElement).value || "EB Games Shift";
-        console.log(eventName);
+        console.log("HERE",startDate, endDate, eventName);
         var filteredList = filterEvents(startDate, endDate, eventName); //TODO FIX
         // TODO "you had x events starting with y between z and a"
         // var filteredList = filterEvents(new Date(), new Date(), "EB Games Shift");
@@ -51,6 +51,7 @@ export function calculatePay(manual: boolean, dates: string[]) {
         PublicHolidayHours = summedHours.publicHolidayHours;
         EveningHours = summedHours.eveningHours;
         OvertimeHours = summedHours.overtimeHours;
+        (document.getElementById("Summary") as HTMLParagraphElement).innerHTML = "You had " + filteredList.length + " events containing: '" + eventName  + "' between " + startDate.toDateString() + " and " + endDate.toDateString();
     }
     
     var WeekdayRate = BaseRate * WeekdayMultiplier;
@@ -68,6 +69,7 @@ export function calculatePay(manual: boolean, dates: string[]) {
     var OvertimePay = (OvertimeRate * OvertimeHours) || 0;
 
     var TotalPay = parseFloat(WeekdayPay.toFixed(2)) + parseFloat(SaturdayPay.toFixed(2)) + parseFloat(SundayPay.toFixed(2)) + parseFloat(EveningPay.toFixed(2)) + parseFloat(PublicHolidayPay.toFixed(2)) + parseFloat(OvertimePay.toFixed(2));
+
 
     (document.getElementById("TableWeekdayHours") as HTMLInputElement).innerHTML = WeekdayHours.toFixed(2);
     (document.getElementById("TableSaturdayHours") as HTMLInputElement).innerHTML = SaturdayHours.toFixed(2);
