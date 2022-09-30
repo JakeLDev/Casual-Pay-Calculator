@@ -101,6 +101,8 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                             <DateRangePicker className="bg-white text-gray-900 py-2 px-4 w-full rounded-lg block mx-auto my-2" onChange={onChange} value={value} format={"dd/MM/yy"} /> 
                         </div>
 
+                        <InputField placeHolder="Name of Shifts in Calendar" inputId="EventName" inputType="string"/>
+
                         <button id="GetEvents" className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => getAllEvents(apiCalendar)}>Get Events</button>
 
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => printEvents()}>printEvents</button>

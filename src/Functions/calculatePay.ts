@@ -37,7 +37,10 @@ export function calculatePay(manual: boolean, dates: string[]) {
         var dateRange = createTimeRange(dates); // TODO show the user which dates are being used
         var startDate = dateRange[0];
         var endDate = dateRange[1];
-        var filteredList = filterEvents(startDate, endDate, "EB Games Shift"); //TODO FIX
+        var eventName = (document.getElementById("EventName") as HTMLInputElement).value || "EB Games Shift";
+        console.log(eventName);
+        var filteredList = filterEvents(startDate, endDate, eventName); //TODO FIX
+        // TODO "you had x events starting with y between z and a"
         // var filteredList = filterEvents(new Date(), new Date(), "EB Games Shift");
         calculateHours(filteredList);
         var summedHours = sumHours(filteredList);
