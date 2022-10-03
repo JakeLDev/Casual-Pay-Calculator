@@ -16,6 +16,7 @@
     "@wojtekmaj/react-daterange-picker": "^4.0.0",
     "date-fns": "^2.29.3",
     "dayjs": "^1.11.5",
+    "firebase-tools": "^11.13.0",
     "flowbite-datepicker": "^1.2.2",
     "qss": "^2.0.3",
     "react": "^18.2.0",
