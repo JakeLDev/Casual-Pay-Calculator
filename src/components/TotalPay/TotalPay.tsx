@@ -5,7 +5,7 @@ const TotalPay = () => {
 
     return (
         <>
-            <div className='grid mx-auto max-w-2xl'>
+            <div className='grid mx-auto my-2 max-w-2xl'>
                 <p id="Summary"></p>
                 <table id="ResultsTable" className="hidden">
                     <thead>
