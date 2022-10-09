@@ -76,6 +76,7 @@ const App = () => {
           <TotalPay />
 
         </div>
+        test
       </div>
     // </Provider>
   );
