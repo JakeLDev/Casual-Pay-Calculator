@@ -119,13 +119,13 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                         <button className="block mx-auto my-2" id="GoogleLogin" onClick={() => handleLogIn()}>
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
                         </button>
-                        <a href={getGoogleAuthUrl()} data-testid="AuthLink">
+                        {/* <a href={getGoogleAuthUrl()} data-testid="AuthLink"> //TODO: Fix this
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
                         </a>
 
                         <button onClick={() => apitest()}>
                             apitest button
-                        </button>
+                        </button> */}
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => listCalendars(apiCalendar)}>Fetch User Calendars</button>
                         <select name="Calendars" id="CalendarDropdown" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" onChange={() => getAllEvents(apiCalendar)}></select>
 
