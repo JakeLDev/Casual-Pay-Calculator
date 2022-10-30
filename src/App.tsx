@@ -11,10 +11,11 @@ import React, { useState, useEffect } from "react";
 import { showCalendars } from './Functions/showCalendars';
 // import { getMyGoogleCalendarsList } from "./calendarApi";
 // import { setTokens } from "./stores/tokens";
-
-
+import { encode, decode } from 'qss';
 
 const App = () => {
+
+
 
   // const hasToken = useSelector(selectHasToken);
   // accessToken = selectAccessToken(getState());
@@ -25,6 +26,23 @@ const App = () => {
   // var begin = false;
   const [begin, setBegin] = React.useState(false);
   // const [begin, setBegin] = React.useState(true);
+  interface googleResponse {
+    access_token?: string;
+    expires_in?: number;
+    scope?: string;
+    token_type?: string;
+  }
+
+  useEffect(() => {
+    const hashParams:googleResponse = decode(window.location?.hash?.slice(1) ?? '');
+    console.log(hashParams);
+    // console.log("effects used")
+    if (hashParams.access_token) {
+      sessionStorage.setItem('accessToken', hashParams.access_token);
+      
+      window.location.href = "/";
+    }
+  }, []);
 
 
   const start = () => {
@@ -76,7 +94,6 @@ const App = () => {
           <TotalPay />
 
         </div>
-        test
       </div>
     // </Provider>
   );

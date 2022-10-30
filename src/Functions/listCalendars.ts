@@ -5,6 +5,7 @@ import { getAllEvents } from "./getAllEvents";
 export function listCalendars(apiCalendar: any) {
     var calendars:any = [];
     var calendarSummaries: any[] = [];
+    console.log("Listing calendars");
     apiCalendar.listCalendars().then((response: any) => {
         // console.log(response);
         // console.log(response.result.items);
