@@ -16,8 +16,16 @@ import { calculateHours } from "../../Functions/calculateHours";
 import { getAllEvents } from "../../Functions/getAllEvents";
 import { getUniqueEvents } from "../../Functions/getUniqueEvents";
 import { createTimeRange } from "../../Functions/createTimeRange";
+import { fetchCalendarEvents, fetchCalendars } from "../../stores/api";
+import { encode } from "qss";
+import { loadCalendars } from "../../stores/calendars";
 
 // import DateRangePicker from '@wojtekmaj/react-daterange-picker'
+
+const googleClientId = '502172359025.apps.googleusercontent.com';
+const googleScope =
+'https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar.events.readonly';
+
 interface MyProps {
     manual: boolean;
 };
@@ -29,14 +37,39 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
         updateValue(date);
       }
 
+    const getGoogleAuthUrl = () => {
+        const params = encode({
+            client_id: googleClientId,
+            redirect_uri: window.location.origin,
+            scope: googleScope,
+            response_type: 'token',
+        });
+    
+        return `https://accounts.google.com/o/oauth2/auth?${params}`;
+    };
+
+    const apitest = () => async () => {
+        console.log("apitest");
+        var accessToken = sessionStorage.getItem('accessToken');
+
+        // console.log(fetchCalendarEvents({}));
+        // var calenders = fetchCalendars({accessToken});
+        // const { items } = await fetchCalendars({ accessToken });
+
+        // loadCalendars(); //TODO HERE
+        
+        // console.log(calenders);
+    }
 
     // var Events: any[] = [];
 
     const handleLogIn = () => {
       // console.log(process.env.REACT_APP_API_KEY);
       // console.log(apiCalendar.tokenClient);
+
         apiCalendar.handleAuthClick();
-      // console.log(apiCalendar.tokenClient);
+    //   getGoogleAuthUrl();
+        // console.log(apiCalendar.tokenClient);
       // console.log(apiCalendar.config);
       // (document.getElementById("GoogleLogin") as HTMLButtonElement).className = "hidden";
     };
@@ -85,6 +118,13 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                         {/* <a href={getGoogleAuthUrl()} data-testid="AuthLink"> */}
                         <button className="block mx-auto my-2" id="GoogleLogin" onClick={() => handleLogIn()}>
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
+                        </button>
+                        <a href={getGoogleAuthUrl()} data-testid="AuthLink">
+                            <img src={logo} alt="Auth with Google" width="191" height="46" />
+                        </a>
+
+                        <button onClick={() => apitest()}>
+                            apitest button
                         </button>
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => listCalendars(apiCalendar)}>Fetch User Calendars</button>
                         <select name="Calendars" id="CalendarDropdown" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" onChange={() => getAllEvents(apiCalendar)}></select>
