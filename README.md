@@ -12,3 +12,7 @@ Web app to calculate casual pay on a weekly/monthly basis, can use google calend
 -output info like average weekly pay, average shift length, shifts per week etc
 
 allow selecting current pay period
+
+In progress:
+Fixing width on mobile -> redo whole mobile css
+changing how google accounts are done
