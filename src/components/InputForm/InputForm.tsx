@@ -21,6 +21,12 @@ import { encode } from "qss";
 import { loadCalendars } from "../../stores/calendars";
 
 // import DateRangePicker from '@wojtekmaj/react-daterange-picker'
+import { useSelector, useDispatch } from 'react-redux';
+import {
+    selectSelectedCalendar,
+    setSelectedCalendar,
+  } from '../../stores/viewState';
+import { selectCalendars } from '../../stores/calendars';
 
 const googleClientId = '502172359025.apps.googleusercontent.com';
 const googleScope =
@@ -31,6 +37,10 @@ interface MyProps {
 };
 
 const InputForm: React.FC<MyProps> = (props: MyProps) => {
+    const dispatch = useDispatch();
+
+    const calendars = useSelector(selectCalendars);
+    const selectedCalendar = useSelector(selectSelectedCalendar);
 
     const [value, updateValue] = useState("");
     const onChange = (date:any) => {
@@ -48,9 +58,23 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
         return `https://accounts.google.com/o/oauth2/auth?${params}`;
     };
 
-    const apitest = () => async () => {
+    // const apitest = () => async () => {
+    //     console.log("apitest");
+    //     var accessToken = sessionStorage.getItem('accessToken');
+
+    //     // console.log(fetchCalendarEvents({}));
+    //     // var calenders = fetchCalendars({accessToken});
+    //     // const { items } = await fetchCalendars({ accessToken });
+
+    //     // loadCalendars(); //TODO HERE
+        
+    //     // console.log(calenders);
+    // }
+
+    const apitest = () => {
         console.log("apitest");
         var accessToken = sessionStorage.getItem('accessToken');
+        // console.log(accessToken);
 
         // console.log(fetchCalendarEvents({}));
         // var calenders = fetchCalendars({accessToken});
@@ -119,16 +143,34 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                         <button className="block mx-auto my-2" id="GoogleLogin" onClick={() => handleLogIn()}>
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
                         </button>
-                        {/* <a href={getGoogleAuthUrl()} data-testid="AuthLink"> //TODO: Fix this
+                        <a href={getGoogleAuthUrl()} data-testid="AuthLink">
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
                         </a>
 
                         <button onClick={() => apitest()}>
                             apitest button
-                        </button> */}
+                        </button>
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => listCalendars(apiCalendar)}>Fetch User Calendars</button>
-                        <select name="Calendars" id="CalendarDropdown" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" onChange={() => getAllEvents(apiCalendar)}></select>
-
+                        {/* <select name="Calendars" id="CalendarDropdown" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" onChange={() => getAllEvents(apiCalendar)}></select> */}
+                        <select
+                            id="CalendarDropdown"
+                            className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent"
+                            onChange={(event) => {
+                                console.log("calendar changed");
+                                //@ts-expect-error
+                                dispatch(setSelectedCalendar({ calendarId: event.target.value }));
+                            }}
+                            value={selectedCalendar ?? ''}
+                            >
+                            {!selectedCalendar && (
+                                <option key="default">Please select calendar</option>
+                            )}
+                            {calendars?.map(({ id, label }: {id:any, label:any}) => (
+                                <option value={id} key={id}>
+                                {label}
+                                </option>
+                            ))}
+                            </select>
                         <select name="timePeriod" id="timePeriod" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" onChange={() => createTimeRange([value])}>
                             <option value="Day">Day</option>
                             <option value="Week">Week</option>

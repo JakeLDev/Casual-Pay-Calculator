@@ -14,5 +14,5 @@ Web app to calculate casual pay on a weekly/monthly basis, can use google calend
 allow selecting current pay period
 
 In progress:
-Fixing width on mobile -> redo whole mobile css
+Fixing width on mobile -> redo whole mobile css - servicable for now
 changing how google accounts are done

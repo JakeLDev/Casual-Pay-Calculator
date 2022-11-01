@@ -36,6 +36,7 @@ const App = () => {
   useEffect(() => {
     const hashParams:googleResponse = decode(window.location?.hash?.slice(1) ?? '');
     console.log(hashParams);
+    console.log("begin");
     // console.log("effects used")
     if (hashParams.access_token) {
       sessionStorage.setItem('accessToken', hashParams.access_token);

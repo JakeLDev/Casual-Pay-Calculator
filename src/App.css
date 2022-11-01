@@ -8,7 +8,7 @@ html {
   height: auto;
   width: auto;
   overflow-y: scroll;
-  overflow-x: hidden;
+  background-color: rgb(39 39 42);
 }
 
 body {
