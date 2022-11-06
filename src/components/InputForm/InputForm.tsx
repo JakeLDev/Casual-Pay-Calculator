@@ -29,7 +29,8 @@ import {
 import { selectCalendars } from '../../stores/calendars';
 import { selectAccessToken } from '../../stores/authentication';
 
-const googleClientId = '502172359025.apps.googleusercontent.com';
+// const googleClientId = '502172359025.apps.googleusercontent.com';
+const googleClientId = '690969561883-sjbuvoapnreslb4ats6v66egc66inmd7.apps.googleusercontent.com'
 const googleScope =
 'https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar.events.readonly';
 
@@ -49,9 +50,11 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
       }
 
     const getGoogleAuthUrl = () => {
+        console.log(window.location.origin)
         const params = encode({
             client_id: googleClientId,
-            redirect_uri: window.location.origin,
+            // redirect_uri: window.location.origin,
+            redirect_uri: 'http://localhost:3000',
             scope: googleScope,
             response_type: 'token',
         });
@@ -131,7 +134,7 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                         <p className='text-left'>Overtime Multiplier</p>
                         <InputField placeHolder="Overtime Multiplier" inputId="OvertimeMultiplier" inputType="number" value="1.4"/>
                     </div>
-                    <div id="HoursInput" className="visible">
+                    <div id="HoursInput" className="hidden">
                         <p className="text-lg font-bold mb-2">Enter Your Hours</p>
                         <p className='text-left'>Weekday Hours</p>
                         <InputField placeHolder="Weekday Hours" inputId="WeekdayHours" inputType="number"/>
@@ -146,20 +149,20 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                         <p className='text-left'>Overtime Hours</p>
                         <InputField placeHolder="Overtime Hours" inputId="OvertimeHours" inputType="number"/>
                     </div>
-                    <div id="GoogleCalendar" className="hidden">
+                    <div id="GoogleCalendar" className="visible">
                         <p className="text-lg font-bold mb-2">Google Calendar</p>
                         {sessionStorage.Events && <p>Events are in session storage!</p>}
                         {/* <a href={getGoogleAuthUrl()} data-testid="AuthLink"> */}
-                        <button className="block mx-auto my-2" id="GoogleLogin" onClick={() => handleLogIn()}>
+                        {/* <button className="block mx-auto my-2" id="GoogleLogin" onClick={() => handleLogIn()}>
                             <img src={logo} alt="Auth with Google" width="191" height="46" />
-                        </button>
+                        </button> */}
                         <a href={getGoogleAuthUrl()} data-testid="AuthLink">
-                            <img src={logo} alt="Auth with Google" width="191" height="46" />
+                            <img src={logo} className="block mx-auto my-2" alt="Auth with Google" width="191" height="46" />
                         </a>
 
-                        <button onClick={() => apitest()}>
+                        {/* <button onClick={() => apitest()}>
                             apitest button
-                        </button>
+                        </button> */}
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => listCalendars(apiCalendar)}>Fetch User Calendars</button>
                         {/* <select name="Calendars" id="CalendarDropdown" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" onChange={() => getAllEvents(apiCalendar)}></select> */}
                         <select
