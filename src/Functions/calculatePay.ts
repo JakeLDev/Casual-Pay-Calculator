@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { sumHours } from './sumHours';
 import { filterEvents } from './filterEvents';
 import { calculateHours } from './calculateHours';
@@ -30,18 +29,11 @@ export function calculatePay(manual: boolean, dates: string[]) {
         EveningHours = parseFloat((document.getElementById("EveningHours") as HTMLInputElement).value) || 0;
         OvertimeHours = parseFloat((document.getElementById("OvertimeHours") as HTMLInputElement).value) || 0;
     } else {
-        // Filter events by summary and date, return as array of events
-        // Loop over events counting the number of hours - calculate, or count from previous counts
-        // console.log("dates", dates);
-        // console.log(dates[0][0]);
-        var dateRange = createTimeRange(dates); // TODO show the user which dates are being used
+        var dateRange = createTimeRange(dates);
         var startDate = dateRange[0];
         var endDate = dateRange[1];
         var eventName = (document.getElementById("EventName") as HTMLInputElement).value || "Shift";
-        console.log("HERE",startDate, endDate, eventName);
-        var filteredList = filterEvents(startDate, endDate, eventName); //TODO FIX
-        // TODO "you had x events starting with y between z and a"
-        // var filteredList = filterEvents(new Date(), new Date(), "EB Games Shift");
+        var filteredList = filterEvents(startDate, endDate, eventName);
         calculateHours(filteredList);
         var summedHours = sumHours(filteredList);
         

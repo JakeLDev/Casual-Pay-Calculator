@@ -27,8 +27,6 @@ export const loadCalendars = () => async (dispatch, getState) => {
       id,
       label: summary,
     }));
-    console.log("AHHHHHHHHHHHHHHHHHHH")
-    console.log(calendarList)
 
     dispatch(setCalendars(calendarList));
 
@@ -47,6 +45,7 @@ export const loadCalendars = () => async (dispatch, getState) => {
       }
     }
   } catch (e) {
+    console.error(e);
     // do nothing
   }
 };
