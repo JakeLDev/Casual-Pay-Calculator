@@ -5,9 +5,7 @@ import "../../DateRangePickerDark.css";
 
 import { calculatePay } from "../../Functions/calculatePay";
 import logo from "../Images/google_auth.png";
-import { apiCalendar } from "../../stores/calendarApi";
 import InputField from "../InputField";
-import { listCalendars } from "../../Functions/listCalendars";
 import { createTimeRange } from "../../Functions/createTimeRange";
 import { encode } from "qss";
 import { loadCalendars } from "../../stores/calendars";
@@ -103,7 +101,6 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                         <a href={getGoogleAuthUrl()} data-testid="AuthLink">
                             <img src={logo} className="block mx-auto my-2" alt="Auth with Google" width="191" height="46" />
                         </a>
-                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => listCalendars(apiCalendar)}>Fetch User Calendars</button>
                         <select
                             id="CalendarDropdown"
                             className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent"
