@@ -7,29 +7,18 @@ import { calculatePay } from "../../Functions/calculatePay";
 import logo from "../Images/google_auth.png";
 import { apiCalendar } from "../../stores/calendarApi";
 import InputField from "../InputField";
-import { showCalendars } from "../../Functions/showCalendars";
-import { parseEvents } from "../../Functions/parseEvents";
-import { filterEvents } from "../../Functions/filterEvents";
-import { printEvents } from "../../Functions/printEvents";
 import { listCalendars } from "../../Functions/listCalendars";
-import { calculateHours } from "../../Functions/calculateHours";
-import { getAllEvents } from "../../Functions/getAllEvents";
-import { getUniqueEvents } from "../../Functions/getUniqueEvents";
 import { createTimeRange } from "../../Functions/createTimeRange";
-import { fetchCalendarEvents, fetchCalendars } from "../../stores/api";
 import { encode } from "qss";
 import { loadCalendars } from "../../stores/calendars";
 
-// import DateRangePicker from '@wojtekmaj/react-daterange-picker'
 import { useSelector, useDispatch } from 'react-redux';
 import {
     selectSelectedCalendar,
     setSelectedCalendar,
 } from '../../stores/viewState';
 import { selectCalendars } from '../../stores/calendars';
-import { selectAccessToken } from '../../stores/authentication';
 
-// const googleClientId = '502172359025.apps.googleusercontent.com';
 const googleClientId = '690969561883-sjbuvoapnreslb4ats6v66egc66inmd7.apps.googleusercontent.com'
 const googleScope =
 'https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/calendar.events.readonly';
@@ -53,8 +42,7 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
         console.log(window.location.origin)
         const params = encode({
             client_id: googleClientId,
-            // redirect_uri: window.location.origin,
-            redirect_uri: 'http://localhost:3000',
+            redirect_uri: window.location.origin,
             scope: googleScope,
             response_type: 'token',
         });
@@ -70,46 +58,6 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
           console.log("Calendars loaded");
         }
       });
-
-    // const apitest = () => async () => {
-    //     console.log("apitest");
-    //     var accessToken = sessionStorage.getItem('accessToken');
-
-    //     // console.log(fetchCalendarEvents({}));
-    //     // var calenders = fetchCalendars({accessToken});
-    //     // const { items } = await fetchCalendars({ accessToken });
-
-    //     // loadCalendars(); //TODO HERE
-        
-    //     // console.log(calenders);
-    // }
-
-    const apitest = () => {
-        console.log("apitest");
-        var accessToken = sessionStorage.getItem('accessToken');
-        // console.log(accessToken);
-
-        // console.log(fetchCalendarEvents({}));
-        // var calenders = fetchCalendars({accessToken});
-        // const { items } = await fetchCalendars({ accessToken });
-
-        // loadCalendars(); //TODO HERE
-        
-        // console.log(calenders);
-    }
-
-    // var Events: any[] = [];
-
-    const handleLogIn = () => {
-      // console.log(process.env.REACT_APP_API_KEY);
-      // console.log(apiCalendar.tokenClient);
-
-        apiCalendar.handleAuthClick();
-    //   getGoogleAuthUrl();
-        // console.log(apiCalendar.tokenClient);
-      // console.log(apiCalendar.config);
-      // (document.getElementById("GoogleLogin") as HTMLButtonElement).className = "hidden";
-    };
 
         return (
             <>
@@ -152,19 +100,10 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                     <div id="GoogleCalendar" className="visible">
                         <p className="text-lg font-bold mb-2">Google Calendar</p>
                         {sessionStorage.Events && <p>Events are in session storage!</p>}
-                        {/* <a href={getGoogleAuthUrl()} data-testid="AuthLink"> */}
-                        {/* <button className="block mx-auto my-2" id="GoogleLogin" onClick={() => handleLogIn()}>
-                            <img src={logo} alt="Auth with Google" width="191" height="46" />
-                        </button> */}
                         <a href={getGoogleAuthUrl()} data-testid="AuthLink">
                             <img src={logo} className="block mx-auto my-2" alt="Auth with Google" width="191" height="46" />
                         </a>
-
-                        {/* <button onClick={() => apitest()}>
-                            apitest button
-                        </button> */}
                         <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => listCalendars(apiCalendar)}>Fetch User Calendars</button>
-                        {/* <select name="Calendars" id="CalendarDropdown" className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent" onChange={() => getAllEvents(apiCalendar)}></select> */}
                         <select
                             id="CalendarDropdown"
                             className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent"
@@ -195,28 +134,13 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                         <div id="datePicker" className="hidden">
                             <DateRangePicker className="bg-white text-gray-900 py-2 px-4 w-full rounded-lg block mx-auto my-2" onChange={onChange} value={value} format={"dd/MM/yy"} /> 
                         </div>
-
                         <InputField placeHolder="Name of Shifts in Calendar" inputId="EventName" inputType="string"/>
-
-                        {/* <button id="GetEvents" className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => getAllEvents(apiCalendar)}>Get Events</button> */}
-
-                        {/* <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => printEvents()}>printEvents</button>
-                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => filterEvents(new Date(value[0]), new Date(value[1]), "EB Games Shift")}>filterEvents</button>
-                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => getUniqueEvents()}>uniqueEvents</button>
-                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => calculateHours(2)}>eventHours</button>
-                        <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full block mx-auto my-2" onClick={() => createTimeRange([value])}>createTimeRange</button> */}
-
-
-
-
-
                     </div>
                 </div>
             <button className="bg-cyan-600 hover:bg-cyan-800 text-white font-bold py-2 px-4 rounded-full" onClick={() => calculatePay(props.manual, [value])}>
                 Calculate Pay
             </button>
             
-            {/* <p id="TotalPayDisplay" className="text-5xl subpixel-antialiased font-bold	text-slate-200"/> */}
             </>
         );
     };
