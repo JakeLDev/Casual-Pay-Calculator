@@ -56,18 +56,18 @@ export function calculateHours(events:any) {
                 // TODO calculate public holidays?
     
                 events[i].overtimeHours = 0;
-                if (endTime > closeTime) {
-                    events[i].overtimeHours += Math.abs(endTime - closeTime) / 1000 / 60 / 60;
-                    console.log("after close: " + Math.abs(endTime - closeTime) / 1000 / 60 / 60);
-                    endTime = closeTime;
-                    console.log(events[i].overtimeHours + " OVERTIMEHOURS");
-                };
-                if (startTime < openTime) {
-                    events[i].overtimeHours += Math.abs(openTime - startTime) / 1000 / 60 / 60;
-                    console.log("before open: " + Math.abs(openTime - startTime) / 1000 / 60 / 60);
-                    startTime = openTime;
-                    console.log(events[i].overtimeHours + " OVERTIMEHOURS");
-                };
+                // if (endTime > closeTime) {
+                //     events[i].overtimeHours += Math.abs(endTime - closeTime) / 1000 / 60 / 60;
+                //     console.log("after close: " + Math.abs(endTime - closeTime) / 1000 / 60 / 60);
+                //     endTime = closeTime;
+                //     console.log(events[i].overtimeHours + " OVERTIMEHOURS");
+                // };
+                // if (startTime < openTime) {
+                //     events[i].overtimeHours += Math.abs(openTime - startTime) / 1000 / 60 / 60;
+                //     console.log("before open: " + Math.abs(openTime - startTime) / 1000 / 60 / 60);
+                //     startTime = openTime;
+                //     console.log(events[i].overtimeHours + " OVERTIMEHOURS");
+                // };
     
                 if (endTime >= eveningStart) { //evening
                     // if (endTime > Date.parse(OpeningHours[dayOfWeek] + "Close") { //TODO fix
