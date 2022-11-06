@@ -20,18 +20,13 @@ export const calendars = createSlice({
 const { setCalendars } = calendars.actions;
 
 export const loadCalendars = () => async (dispatch, getState) => {
-  console.log('loadCalendars1');
   const accessToken = selectAccessToken(getState());
-  console.log('loadCalendars2');
-  console.log('accessToken', accessToken);
   try {
     const { items } = await fetchCalendars({ accessToken });
     const calendarList = items.map(({ id, summary }) => ({
       id,
       label: summary,
     }));
-    console.log("AHHHHHHHHHHHHHHHHHHH")
-    console.log(calendarList)
 
     dispatch(setCalendars(calendarList));
 
