@@ -105,14 +105,13 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
                             id="CalendarDropdown"
                             className="h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent"
                             onChange={(event) => {
-                                console.log("calendar changed");
-                                //@ts-expect-error
+                                // @ts-expect-error
                                 dispatch(setSelectedCalendar({ calendarId: event.target.value }));
                             }}
                             value={selectedCalendar ?? ''}
                             >
                             {!selectedCalendar && (
-                                <option key="default">Please select calendar</option>
+                                <option key="default">Please sign in</option>
                             )}
                             {calendars?.map(({ id, label }: {id:any, label:any}) => (
                                 <option value={id} key={id}>
