@@ -37,7 +37,6 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
       }
 
     const getGoogleAuthUrl = () => {
-        console.log(window.location.origin)
         const params = encode({
             client_id: googleClientId,
             redirect_uri: window.location.origin,
@@ -53,7 +52,6 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
         if (!calendars && accessToken) {
             //@ts-expect-error
           dispatch(loadCalendars());
-          console.log("Calendars loaded");
         }
       });
 
