@@ -2,6 +2,8 @@ import { Dictionary } from "@reduxjs/toolkit";
 
 export function calculateHours(events:any) {
 
+    console.log("Calculating Hours");
+
             //TODO allow user input for opening hours
             const Days:Dictionary<String> = { 
                 0: "Sunday",
@@ -27,14 +29,24 @@ export function calculateHours(events:any) {
             console.log(events[0]);
     
             // weekday hours
+            try {
+                
+            
             for (var i = 0; i < events.length; i++) {
             //TODO if already calculated for that event, skip
-                var dayOfWeek = new Date(events[i].start.dateTime).getDay();
-                var eveningStart = new Date(events[i].start.dateTime).setHours(18,0,0,0);
-                var startTime = new Date(events[i].start.dateTime).getTime();
-                var endTime = new Date(events[i].end.dateTime).getTime();
-                var openTime = Date.parse(events[i].start.dateTime.slice(0,10) + " " + OpeningHours[Days[dayOfWeek] + "Open"]);
-                var closeTime = Date.parse(events[i].start.dateTime.slice(0,10) + " " + OpeningHours[Days[dayOfWeek] + "Close"]);
+                // var dayOfWeek = new Date(events[i].start.dateTime).getDay();
+                // var eveningStart = new Date(events[i].start.dateTime).setHours(18,0,0,0);
+                // var startTime = new Date(events[i].start.dateTime).getTime();
+                // var endTime = new Date(events[i].end.dateTime).getTime();
+                // var openTime = Date.parse(events[i].start.dateTime.slice(0,10) + " " + OpeningHours[Days[dayOfWeek] + "Open"]);
+                // var closeTime = Date.parse(events[i].start.dateTime.slice(0,10) + " " + OpeningHours[Days[dayOfWeek] + "Close"]);
+
+                var dayOfWeek = new Date(events[i].start).getDay();
+                var eveningStart = new Date(events[i].start).setHours(18,0,0,0);
+                var startTime = new Date(events[i].start).getTime();
+                var endTime = new Date(events[i].end).getTime();
+                var openTime = Date.parse(events[i].start.slice(0,10) + " " + OpeningHours[Days[dayOfWeek] + "Open"]);
+                var closeTime = Date.parse(events[i].start.slice(0,10) + " " + OpeningHours[Days[dayOfWeek] + "Close"]);
     
                 // console.log(dayOfWeek, openTime, closeTime);
     
@@ -101,6 +113,9 @@ export function calculateHours(events:any) {
                 console.log(events[i].totalTime + " TOTALTIME");
             }
             console.log(events);
+        } catch (error) {
+            console.log(error);       
+        }
             //TODO write to session storage with new hour tallys
     
             sessionStorage.setItem("events", JSON.stringify(events));

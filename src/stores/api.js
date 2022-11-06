@@ -35,6 +35,7 @@ const fetchEvents = async ({ accessToken, calendarId, pageToken, acc }) => {
     },
   });
 
+  console.log("return fetchEvents")
   if (!nextPageToken) {
     return [...acc, ...items];
   }

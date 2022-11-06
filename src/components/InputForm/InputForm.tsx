@@ -25,8 +25,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import {
     selectSelectedCalendar,
     setSelectedCalendar,
-  } from '../../stores/viewState';
+} from '../../stores/viewState';
 import { selectCalendars } from '../../stores/calendars';
+import { selectAccessToken } from '../../stores/authentication';
 
 const googleClientId = '502172359025.apps.googleusercontent.com';
 const googleScope =
@@ -57,6 +58,15 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
     
         return `https://accounts.google.com/o/oauth2/auth?${params}`;
     };
+
+    useEffect(() => {
+        var accessToken = sessionStorage.getItem('accessToken');
+        if (!calendars && accessToken) {
+            //@ts-expect-error
+          dispatch(loadCalendars());
+          console.log("Calendars loaded");
+        }
+      });
 
     // const apitest = () => async () => {
     //     console.log("apitest");

@@ -42,6 +42,7 @@ export function calculatePay(manual: boolean, dates: string[]) {
         var filteredList = filterEvents(startDate, endDate, eventName); //TODO FIX
         // TODO "you had x events starting with y between z and a"
         // var filteredList = filterEvents(new Date(), new Date(), "EB Games Shift");
+        console.log("filtered list", filteredList);
         calculateHours(filteredList);
         var summedHours = sumHours(filteredList);
         

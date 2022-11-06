@@ -58,7 +58,7 @@ const App = () => {
       (document.getElementById("CalendarToggle") as HTMLButtonElement).innerHTML = "Enter Shifts Manually";
       (document.getElementById("HoursInput") as HTMLDivElement).className = "hidden";
       (document.getElementById("GoogleCalendar") as HTMLDivElement).className = "visible block";
-      showCalendars();
+      // showCalendars(); // TODO Uncomment this
     } else {
       (document.getElementById("CalendarToggle") as HTMLButtonElement).innerHTML = "Read Google Calendar";
       (document.getElementById("HoursInput") as HTMLDivElement).className = "visible";

@@ -15,10 +15,16 @@ export function filterEvents(rangeStart:Date, rangeEnd:Date, eventDesc:String) {
     console.log(events);
     console.log(rangeStart, rangeEnd, eventDesc);
     // var filteredEvents = events.filter( (x: { start: { dateTime: Date; }; summary: String[]; }) => x.start.dateTime >= rangeStart && x.start.dateTime <= rangeEnd && x.summary.includes(eventDesc));
-    const filteredEvents = events.filter( (x: { start: { dateTime: string; }; summary: String[]; }) => 
+
+    // const filteredEvents = events.filter( (x: { start: { dateTime: string; }; summary: String[]; }) => 
+    //                                         x.summary.includes(eventDesc) && 
+    //                                         new Date(x.start.dateTime) >= rangeStart && 
+    //                                         new Date(x.start.dateTime) <= rangeEnd);
+
+    const filteredEvents = events.filter( (x: { start: string; summary: String[]; }) => 
                                             x.summary.includes(eventDesc) && 
-                                            new Date(x.start.dateTime) >= rangeStart && 
-                                            new Date(x.start.dateTime) <= rangeEnd);
-    console.log(filteredEvents);
+                                            new Date(x.start) >= rangeStart && 
+                                            new Date(x.start) <= rangeEnd);
+    console.log("Filtered events", filteredEvents);
     return filteredEvents;
 }

@@ -13,7 +13,7 @@ export function listCalendars(apiCalendar: any) {
         // calendars = response.result.items;
         // calendarSummaries = calendars.map((calendar: any) => calendar.summary);
 
-        showCalendars();
+        // showCalendars(); //TODO uncomeent this
         getAllEvents(apiCalendar);
 
         // document.getElementById("CalendarList")!.className = "h-10 my-2 w-full rounded-lg pl-2 text-sm placeholder-gray-400 text-gray-900 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-600 focus:border-transparent";
