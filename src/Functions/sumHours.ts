@@ -6,7 +6,6 @@ export function sumHours(filteredList: any[]) {
     var eveningHours = 0;
     var overtimeHours = 0;
     filteredList.forEach((event: any) => {
-        console.log(event);
         weekdayHours += event.weekdayHours;
         saturdayHours += event.saturdayHours;
         sundayHours += event.sundayHours;
@@ -14,13 +13,6 @@ export function sumHours(filteredList: any[]) {
         eveningHours += event.eveningHours;
         overtimeHours += event.overtimeHours;
     });
-    console.log("sum hours");
-    console.log(weekdayHours);
-    console.log(saturdayHours);
-    console.log(sundayHours);
-    console.log(publicHolidayHours);
-    console.log(eveningHours);
-    console.log(overtimeHours);
     return {
         weekdayHours: weekdayHours,
         saturdayHours: saturdayHours,
