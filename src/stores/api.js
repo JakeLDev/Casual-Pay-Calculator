@@ -23,7 +23,6 @@ export const fetchCalendars = ({ accessToken }) =>
   fetchGoogle({ url: `${API_BASE_PATH}users/me/calendarList`, accessToken });
 
 const fetchEvents = async ({ accessToken, calendarId, pageToken, acc }) => {
-  console.log("fetchEvents")
   const { items, nextPageToken } = await fetchGoogle({
     url: `${API_BASE_PATH}calendars/${encodeURIComponent(calendarId)}/events`,
     accessToken,
@@ -35,7 +34,6 @@ const fetchEvents = async ({ accessToken, calendarId, pageToken, acc }) => {
     },
   });
 
-  console.log("return fetchEvents")
   if (!nextPageToken) {
     return [...acc, ...items];
   }

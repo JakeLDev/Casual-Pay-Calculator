@@ -151,40 +151,10 @@ export const setSelectedCalendar = ({ calendarId }) => (dispatch, getState) => {
   dispatch(setSelectedCalendarId(calendarId));
   updateConfig({ selectedCalendarId: calendarId });
   const calendarEvents = selectCalendarEvents(getState(), calendarId);
-  console.log('calendarEvents', calendarEvents);
   sessionStorage.setItem('Events', JSON.stringify(calendarEvents));
   if (!calendarEvents) {
     dispatch(loadCalendarEvents({ calendarId }));
   }
-};
-
-export const changeRangeType = ({ range }) => (dispatch, getState) => {
-  if (range === RANGE_TYPE.CUSTOM) {
-    const { start, end } = selectCurrentDatePointers(getState());
-    // We need to subtract a day here, because a day was added to `end`
-    // in order to have the selected end day in the calculation.
-    const correctedEnd = end.subtract(1, 'day');
-    dispatch(setStart(start.toJSON()));
-    dispatch(setEnd(correctedEnd.toJSON()));
-    updateConfig({ start: start.toJSON(), end: correctedEnd.toJSON() });
-  }
-  dispatch(setRangeType(range));
-  updateConfig({ selectedRangeType: range });
-};
-
-export const changeWeekStart = (weekStart) => (dispatch) => {
-  dispatch(setWeekStart(weekStart));
-  updateConfig({ weekStart });
-};
-
-export const changeStart = (start) => (dispatch) => {
-  dispatch(setStart(start));
-  updateConfig({ start });
-};
-
-export const changeEnd = (end) => (dispatch) => {
-  dispatch(setEnd(end));
-  updateConfig({ end });
 };
 
 export default viewState.reducer;
