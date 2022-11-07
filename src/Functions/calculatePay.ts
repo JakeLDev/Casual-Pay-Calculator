@@ -4,6 +4,7 @@ import { calculateHours } from './calculateHours';
 import { createTimeRange } from './createTimeRange';
 
 export function calculatePay(manual: boolean, dates: string[]) {
+    // TODO Print error when no events are found
     
     var BaseRate = parseFloat((document.getElementById("BaseRate") as HTMLInputElement).value) || 30.36;
 

@@ -7,7 +7,7 @@ html {
   /* min-width: 100%; */
   height: auto;
   width: auto;
-  overflow-y: scroll;
+  overflow-y: auto;
   background-color: rgb(39 39 42);
 }
 
@@ -29,6 +29,28 @@ body {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+/* Scroll bar css */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #232425;
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(97, 97, 102);
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(61, 61, 66);
 }
 
 @media (prefers-reduced-motion: no-preference) {
