@@ -15,4 +15,5 @@ allow selecting current pay period
 
 In progress:
 Fixing width on mobile -> redo whole mobile css - servicable for now
-changing how google accounts are done
+Verify Domain on Google Search Console
+Create video on Google Data Usage
