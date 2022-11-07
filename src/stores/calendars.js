@@ -43,6 +43,8 @@ export const loadCalendars = () => async (dispatch, getState) => {
         // dispatch null, so that it's removed from localStorage config
         dispatch(setSelectedCalendar({ calendarId: null }));
       }
+    } else {
+      dispatch(setSelectedCalendar({ calendarId: calendarList[0].id }));
     }
   } catch (e) {
     console.error(e);
