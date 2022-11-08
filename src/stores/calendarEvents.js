@@ -21,40 +21,44 @@ export const calendarEvents = createSlice({
 
 const { setCalendarEvents, setLoading } = calendarEvents.actions;
 
-export const loadCalendarEvents = ({ calendarId }) => async (
+export const loadCalendarEvents = ({ calendarId, fetched }) => async (
   dispatch,
   getState
 ) => {
   const accessToken = selectAccessToken(getState());
   try {
     dispatch(setLoading(true));
-    const items = await fetchCalendarEvents({ accessToken, calendarId });
-    dispatch(
-      setCalendarEvents({
-        calendarId,
-        events: items
-          .map(({ id, summary, start, end }) => {
-            // Filter out events that have no `dateTime`. Those are full day
-            // events, they only have the field `date`.
-            if (!start.dateTime) {
-              return null;
-            }
-
-            // only return the fields we need
-            return {
-              id,
-              summary,
-              start: start.dateTime,
-              end: end.dateTime,
-            };
-          })
-          .filter(Boolean),
-      })
-    );
+    if (fetched === false) {
+      const items = await fetchCalendarEvents({ accessToken, calendarId });
+      dispatch(
+        setCalendarEvents({
+          calendarId,
+          events: items
+            .map(({ id, summary, start, end }) => {
+              // Filter out events that have no `dateTime`. Those are full day
+              // events, they only have the field `date`.
+              if (!start.dateTime) {
+                return null;
+              }
+              // only return the fields we need
+              return {
+                id,
+                summary,
+                start: start.dateTime,
+                end: end.dateTime,
+              };
+            })
+            .filter(Boolean),
+        })
+      );
+  }
   } catch (e) {
     // do nothing
   } finally {
     dispatch(setLoading(false));
+    const calendarEvents = selectCalendarEvents(getState(), calendarId);
+    var events = JSON.stringify(calendarEvents) || [];
+    sessionStorage.setItem('Events', events);
   }
 };
 
@@ -62,8 +66,7 @@ export const selectIsEventsLoading = (state) =>
   state.calendarEvents?.loading ?? false;
 
 export const selectCalendarEvents = (state, calendarId) =>
-  // (!selectIsEventsLoading(state) && state.calendarEvents?.map[calendarId]) ??
-  // null;
-  state.calendarEvents?.map[calendarId] ?? null;
+  (!selectIsEventsLoading(state) && state.calendarEvents?.map[calendarId]) ??
+  null;
 
 export default calendarEvents.reducer;
