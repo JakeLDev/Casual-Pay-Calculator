@@ -151,9 +151,9 @@ export const setSelectedCalendar = ({ calendarId }) => (dispatch, getState) => {
   dispatch(setSelectedCalendarId(calendarId));
   updateConfig({ selectedCalendarId: calendarId });
   const calendarEvents = selectCalendarEvents(getState(), calendarId);
-  console.log(calendarEvents);
+  // console.log(calendarEvents);
   var events = JSON.stringify(calendarEvents) || [];
-  console.log(events)
+  // console.log(events)
   sessionStorage.setItem('Events', events);
   // if (!calendarEvents) {
   dispatch(loadCalendarEvents({ calendarId }));
