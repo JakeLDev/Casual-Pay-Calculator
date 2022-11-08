@@ -4,8 +4,6 @@ import 'dayjs/locale/de';
 
 import { loadCalendarEvents, selectCalendarEvents } from './calendarEvents';
 import { updateConfig } from './storage';
-import { RANGE_TYPE, WEEK_START } from '../constants';
-import roundHours from '../utils/roundHours';
 
 export const viewState = createSlice({
   name: 'viewState',
@@ -44,108 +42,11 @@ export const viewState = createSlice({
 });
 
 export const { changeRange, resetRange } = viewState.actions;
-const {
-  setSelectedCalendarId,
-  setRangeType,
-  setWeekStart,
-  setStart,
-  setEnd,
-} = viewState.actions;
+const {setSelectedCalendarId} = viewState.actions;
 
 export const selectSelectedCalendar = (state) =>
   state.viewState.selectedCalendarId;
 
-export const selectDate = (state) => state.viewState.currentDatePointerStart;
-
-export const selectRangeType = (state) => state.viewState.selectedRangeType;
-export const selectWeekStart = (state) => state.viewState.weekStart;
-export const selectLocaleForWeekStart = (state) =>
-  state.viewState.weekStart === WEEK_START.SUNDAY ? 'en' : 'de';
-
-export const selectCurrentDatePointers = (state) => {
-  const {
-    selectedRangeType,
-    currentDatePointerStart,
-    currentDatePointerEnd,
-  } = state.viewState;
-  const currentDatePointerStartDate = dayjs(currentDatePointerStart);
-
-  if (selectedRangeType === RANGE_TYPE.CUSTOM) {
-    return {
-      start: dayjs(currentDatePointerStart),
-      // The selected end day should be included in the calculation, so we
-      // need to add an extra day.
-      end: dayjs(currentDatePointerEnd).add(1, 'day'),
-    };
-  }
-
-  let rangeStart;
-  let rangeEnd;
-
-  if (selectedRangeType === RANGE_TYPE.DAY) {
-    rangeStart = currentDatePointerStartDate.startOf('day');
-    rangeEnd = rangeStart.add(1, 'day');
-  } else if (selectedRangeType === RANGE_TYPE.WEEK) {
-    rangeStart = currentDatePointerStartDate
-      .locale(selectLocaleForWeekStart(state))
-      .startOf('day')
-      .weekday(0);
-    rangeEnd = rangeStart.add(1, 'week');
-  } else if (selectedRangeType === RANGE_TYPE.MONTH) {
-    rangeStart = currentDatePointerStartDate.startOf('month');
-    rangeEnd = rangeStart.add(1, 'month');
-  } else if (selectedRangeType === RANGE_TYPE.YEAR) {
-    rangeStart = currentDatePointerStartDate.startOf('year');
-    rangeEnd = rangeStart.add(1, 'year');
-  } else if (selectedRangeType === RANGE_TYPE.TOTAL) {
-    rangeStart = dayjs('2000-01-01T10:00:00Z');
-    rangeEnd = dayjs('2040-01-01T10:00:00Z');
-  }
-
-  return {
-    start: rangeStart,
-    end: rangeEnd,
-  };
-};
-
-export const selectEventsByRange = (state) => {
-  const events = selectCalendarEvents(state, selectSelectedCalendar(state));
-
-  if (!events) {
-    return null;
-  }
-
-  const { start: rangeStart, end: rangeEnd } = selectCurrentDatePointers(state);
-
-  return events
-    .filter(
-      ({ start, end }) =>
-        // Filter out all events that end before selected start date or start after
-        // selected end date.
-        !(new Date(end) < rangeStart || new Date(start) > rangeEnd)
-    )
-    .map(({ start, end, ...rest }) => ({
-      ...rest,
-      start: new Date(start) < rangeStart ? rangeStart.toJSON() : start,
-      end: new Date(end) > rangeEnd ? rangeEnd.toJSON() : end,
-    }));
-};
-
-export const selectHours = (state) => {
-  const events = selectEventsByRange(state);
-
-  if (!events) {
-    return null;
-  }
-
-  let hours = 0;
-
-  events.forEach(({ start, end }) => {
-    hours += (new Date(end) - new Date(start)) / 1000 / 60 / 60;
-  });
-
-  return roundHours(hours);
-};
 
 export const setSelectedCalendar = ({ calendarId }) => (dispatch, getState) => {
   dispatch(setSelectedCalendarId(calendarId));
