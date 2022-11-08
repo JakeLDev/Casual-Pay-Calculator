@@ -35,6 +35,10 @@ export function calculatePay(manual: boolean, dates: string[]) {
         var endDate = dateRange[1];
         var eventName = (document.getElementById("EventName") as HTMLInputElement).value || "Shift";
         var filteredList = filterEvents(startDate, endDate, eventName);
+        if (filteredList.length === 0) {
+            (document.getElementById("Summary") as HTMLParagraphElement).innerHTML = "No Events Found";
+            return;
+        }
         calculateHours(filteredList);
         var summedHours = sumHours(filteredList);
         

@@ -151,10 +151,13 @@ export const setSelectedCalendar = ({ calendarId }) => (dispatch, getState) => {
   dispatch(setSelectedCalendarId(calendarId));
   updateConfig({ selectedCalendarId: calendarId });
   const calendarEvents = selectCalendarEvents(getState(), calendarId);
-  sessionStorage.setItem('Events', JSON.stringify(calendarEvents));
-  if (!calendarEvents) {
-    dispatch(loadCalendarEvents({ calendarId }));
-  }
+  console.log(calendarEvents);
+  var events = JSON.stringify(calendarEvents) || [];
+  console.log(events)
+  sessionStorage.setItem('Events', events);
+  // if (!calendarEvents) {
+  dispatch(loadCalendarEvents({ calendarId }));
+  // }
 };
 
 export default viewState.reducer;

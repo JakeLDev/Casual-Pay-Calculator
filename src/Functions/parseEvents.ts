@@ -3,7 +3,7 @@ export function parseEvents() {
   if (!sessionStorage.getItem('Events')) {
       alert("Please Sign-In First!");
     } else {
-      events = JSON.parse(sessionStorage.Events);
+      events = JSON.parse(sessionStorage.Events) || [];
     }
   return events;
 }
