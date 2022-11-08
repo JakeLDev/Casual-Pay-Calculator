@@ -28,7 +28,6 @@ export const loadCalendarEvents = ({ calendarId, fetched }) => async (
   const accessToken = selectAccessToken(getState());
   try {
     dispatch(setLoading(true));
-    console.log("fetched: ", fetched);
     if (fetched === false) {
       const items = await fetchCalendarEvents({ accessToken, calendarId });
       dispatch(
@@ -41,7 +40,6 @@ export const loadCalendarEvents = ({ calendarId, fetched }) => async (
               if (!start.dateTime) {
                 return null;
               }
-
               // only return the fields we need
               return {
                 id,
