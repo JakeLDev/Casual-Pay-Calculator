@@ -48,6 +48,7 @@ const InputForm: React.FC<MyProps> = (props: MyProps) => {
     };
 
     useEffect(() => {
+        // console.log("useEffect");
         var accessToken = sessionStorage.getItem('accessToken');
         if (!calendars && accessToken) {
             //@ts-expect-error

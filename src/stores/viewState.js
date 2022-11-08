@@ -150,14 +150,9 @@ export const selectHours = (state) => {
 export const setSelectedCalendar = ({ calendarId }) => (dispatch, getState) => {
   dispatch(setSelectedCalendarId(calendarId));
   updateConfig({ selectedCalendarId: calendarId });
-  const calendarEvents = selectCalendarEvents(getState(), calendarId);
-  // console.log(calendarEvents);
-  var events = JSON.stringify(calendarEvents) || [];
-  // console.log(events)
-  sessionStorage.setItem('Events', events);
-  // if (!calendarEvents) {
-  dispatch(loadCalendarEvents({ calendarId }));
-  // }
+  var calendarEvents = selectCalendarEvents(getState(), calendarId);
+  var fetched = Boolean(calendarEvents);
+  dispatch(loadCalendarEvents({ calendarId, fetched }));
 };
 
 export default viewState.reducer;

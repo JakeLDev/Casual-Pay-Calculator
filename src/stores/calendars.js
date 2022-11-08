@@ -38,12 +38,15 @@ export const loadCalendars = () => async (dispatch, getState) => {
       );
 
       if (calendarExists) {
+        // console.log('calendar exists');
+        console.log(selectedCalendarId);
         dispatch(setSelectedCalendar({ calendarId: selectedCalendarId }));
       } else {
         // dispatch null, so that it's removed from localStorage config
-        dispatch(setSelectedCalendar({ calendarId: null }));
+        // dispatch(setSelectedCalendar({ calendarId: null }));
       }
     } else {
+      // console.log('no calendar selected');
       dispatch(setSelectedCalendar({ calendarId: calendarList[0].id }));
     }
   } catch (e) {
