@@ -93,5 +93,4 @@ export function calculateHours(events:any) {
     } catch (error) {
         console.log(error);       
     }
-    sessionStorage.setItem("events", JSON.stringify(events));
 }

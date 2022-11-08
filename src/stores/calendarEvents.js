@@ -62,7 +62,8 @@ export const selectIsEventsLoading = (state) =>
   state.calendarEvents?.loading ?? false;
 
 export const selectCalendarEvents = (state, calendarId) =>
-  (!selectIsEventsLoading(state) && state.calendarEvents?.map[calendarId]) ??
-  null;
+  // (!selectIsEventsLoading(state) && state.calendarEvents?.map[calendarId]) ??
+  // null;
+  state.calendarEvents?.map[calendarId] ?? null;
 
 export default calendarEvents.reducer;
