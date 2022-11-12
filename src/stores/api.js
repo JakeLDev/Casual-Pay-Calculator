@@ -35,6 +35,7 @@ const fetchEvents = async ({ accessToken, calendarId, pageToken, acc }) => {
   });
 
   if (!nextPageToken) {
+    // sessionStorage.setItem('events', JSON.stringify(acc.concat(items)));
     return [...acc, ...items];
   }
 

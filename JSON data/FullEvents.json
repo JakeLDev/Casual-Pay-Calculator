@@ -1,0 +1,2784 @@
+[
+  {
+    "kind": "calendar#event",
+    "etag": "\"3312129469297000\"",
+    "id": "_60s36ga36ss44b9i8go3ib9k7133aba1651j8ba271242cq66p2k2g9i6c",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=XzYwczM2Z2EzNnNzNDRiOWk4Z28zaWI5azcxMzNhYmExNjUxajhiYTI3MTI0MmNxNjZwMmsyZzlpNmMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-24T09:58:54.000Z",
+    "updated": "2022-06-24T09:58:54.694Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-06-25T08:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-06-25T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "083AC78B-2D09-48F5-A1C4-B8DA3F6EAA23",
+    "sequence": 0,
+    "reminders": {
+      "useDefault": false,
+      "overrides": [
+        { "method": "popup", "minutes": 30 },
+        { "method": "popup", "minutes": 300 },
+        { "method": "popup", "minutes": 1440 }
+      ]
+    },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3313143406540000\"",
+    "id": "hf61um6cvadoq3pj17bcintpq8",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=aGY2MXVtNmN2YWRvcTNwajE3YmNpbnRwcTggamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T06:48:23.000Z",
+    "updated": "2022-06-30T06:48:23.270Z",
+    "summary": "Cancel minecraft server",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-14T14:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-14T15:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "hf61um6cvadoq3pj17bcintpq8@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3313171583292000\"",
+    "id": "cpis95kjf3mdeblrnf7v5d6070",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=Y3Bpczk1a2pmM21kZWJscm5mN3Y1ZDYwNzAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T10:43:11.000Z",
+    "updated": "2022-06-30T10:43:11.646Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-03T10:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-03T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "cpis95kjf3mdeblrnf7v5d6070@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3313176450498000\"",
+    "id": "2mcav5bk067foermq7hrafem6i",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=Mm1jYXY1YmswNjdmb2VybXE3aHJhZmVtNmkgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T11:23:45.000Z",
+    "updated": "2022-06-30T11:23:45.249Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-05T08:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-05T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "2mcav5bk067foermq7hrafem6i@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3313176479394000\"",
+    "id": "1593gobe3cfj36pauv2oh3ov17",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MTU5M2dvYmUzY2ZqMzZwYXV2Mm9oM292MTcgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T11:23:59.000Z",
+    "updated": "2022-06-30T11:23:59.697Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-06T12:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-06T16:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "1593gobe3cfj36pauv2oh3ov17@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3313176528478000\"",
+    "id": "6hjg5d41bks0ct9iq290q2s3n0",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NmhqZzVkNDFia3MwY3Q5aXEyOTBxMnMzbjAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T11:24:24.000Z",
+    "updated": "2022-06-30T11:24:24.239Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-07T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-07T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "6hjg5d41bks0ct9iq290q2s3n0@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3313182476730000\"",
+    "id": "fdgqptvn6vcfpb8irvtt749qb0",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ZmRncXB0dm42dmNmcGI4aXJ2dHQ3NDlxYjAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T12:13:58.000Z",
+    "updated": "2022-06-30T12:13:58.365Z",
+    "summary": "Lunch with Elise",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-08T12:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-08T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "fdgqptvn6vcfpb8irvtt749qb0@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3313547537884000\"",
+    "id": "ojh0l0p6nglfn1kkbrks15g69c",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=b2poMGwwcDZuZ2xmbjFra2Jya3MxNWc2OWMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-02T14:56:08.000Z",
+    "updated": "2022-07-02T14:56:08.942Z",
+    "summary": "CFC Workshop",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-09T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-09T16:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "ojh0l0p6nglfn1kkbrks15g69c@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3314046540744000\"",
+    "id": "r763bhv8iu762q3luqtp93t3t4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=cjc2M2JodjhpdTc2MnEzbHVxdHA5M3QzdDQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-05T12:14:18.000Z",
+    "updated": "2022-07-05T12:14:30.372Z",
+    "summary": "Graduation Ceremony",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-28T18:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-28T20:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "r763bhv8iu762q3luqtp93t3t4@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3314214568234000\"",
+    "id": "ci4oo4cu3spqshnmbukauvl8k0",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=Y2k0b280Y3Uzc3Bxc2hubWJ1a2F1dmw4azAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-06T11:34:44.000Z",
+    "updated": "2022-07-06T11:34:44.117Z",
+    "summary": "Doctors appointment",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-08T09:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-08T10:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "ci4oo4cu3spqshnmbukauvl8k0@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3314553374564000\"",
+    "id": "006s5oulbhpofqcher3h5tgat4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MDA2czVvdWxiaHBvZnFjaGVyM2g1dGdhdDQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-08T10:38:00.000Z",
+    "updated": "2022-07-08T10:38:07.282Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-11T09:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-11T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "006s5oulbhpofqcher3h5tgat4@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3314553423444000\"",
+    "id": "39a204pvu2f7cecaco5j0577rf",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MzlhMjA0cHZ1MmY3Y2VjYWNvNWowNTc3cmYgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T11:27:15.000Z",
+    "updated": "2022-07-08T10:38:31.722Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-14T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-14T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "39a204pvu2f7cecaco5j0577rf@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3314555998162000\"",
+    "id": "0q1jt61ql7sopmsdu0a5ip3dr3",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MHExanQ2MXFsN3NvcG1zZHUwYTVpcDNkcjMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T11:24:46.000Z",
+    "updated": "2022-07-08T10:59:59.081Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-10T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-10T15:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "0q1jt61ql7sopmsdu0a5ip3dr3@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3314928824966000\"",
+    "id": "kk71i3frfaktgpo62ss0uee7l0",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=a2s3MWkzZnJmYWt0Z3BvNjJzczB1ZWU3bDAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-10T14:46:52.000Z",
+    "updated": "2022-07-10T14:46:52.483Z",
+    "summary": "Lunch with Elise",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-12T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-12T14:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "kk71i3frfaktgpo62ss0uee7l0@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3315190950136000\"",
+    "id": "prmgb5pf2g022derl5d1rhq5ps",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=cHJtZ2I1cGYyZzAyMmRlcmw1ZDFyaHE1cHMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-12T03:11:15.000Z",
+    "updated": "2022-07-12T03:11:15.068Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-13T09:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-13T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "prmgb5pf2g022derl5d1rhq5ps@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3315444021648000\"",
+    "id": "3ks4g7cl3q81msjpu578raktd4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=M2tzNGc3Y2wzcTgxbXNqcHU1NzhyYWt0ZDQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-13T14:20:10.000Z",
+    "updated": "2022-07-13T14:20:10.824Z",
+    "summary": "Lunch with Elise",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-18T12:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-18T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "3ks4g7cl3q81msjpu578raktd4@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3315567494120000\"",
+    "id": "68ko1qubddvq12licf9lstdg03",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NjhrbzFxdWJkZHZxMTJsaWNmOWxzdGRnMDMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T11:29:07.000Z",
+    "updated": "2022-07-14T07:29:07.060Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-21T15:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-21T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "68ko1qubddvq12licf9lstdg03@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3315567540222000\"",
+    "id": "2uqenp2qvkki71liisv0tk028g",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MnVxZW5wMnF2a2tpNzFsaWlzdjB0azAyOGcgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T11:29:36.000Z",
+    "updated": "2022-07-14T07:29:30.111Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-24T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-24T15:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "2uqenp2qvkki71liisv0tk028g@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3315762263528000\"",
+    "id": "7ood603u3nv84btuaq4fhohiui",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=N29vZDYwM3UzbnY4NGJ0dWFxNGZob2hpdWkgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-30T11:27:57.000Z",
+    "updated": "2022-07-15T10:32:11.764Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-17T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-17T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "7ood603u3nv84btuaq4fhohiui@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3315800715748000\"",
+    "id": "gqai8f543d4mp87blo2knge81s",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=Z3FhaThmNTQzZDRtcDg3YmxvMmtuZ2U4MXMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-15T15:52:37.000Z",
+    "updated": "2022-07-15T15:52:37.874Z",
+    "summary": "CFC Workshop",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-16T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-16T16:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "gqai8f543d4mp87blo2knge81s@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3316302828040000\"",
+    "id": "1ovvcst0ckmteojpt889c1terp",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MW92dmNzdDBja210ZW9qcHQ4ODljMXRlcnAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-18T13:35:56.000Z",
+    "updated": "2022-07-18T13:36:54.020Z",
+    "summary": "EB Piss up",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-07-22T19:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-07-22T20:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "1ovvcst0ckmteojpt889c1terp@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3316305038172000\"",
+    "id": "1b8j2740efcrcpr6qbbnfr0bbr",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MWI4ajI3NDBlZmNyY3ByNnFiYm5mcjBiYnIgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-18T13:55:19.000Z",
+    "updated": "2022-07-18T13:55:19.086Z",
+    "summary": "First Day at Atlassian",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2023-01-16T09:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2023-01-16T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "1b8j2740efcrcpr6qbbnfr0bbr@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3318182209038000\"",
+    "id": "0e1pp53gbkuihb11qgid8u88e8",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MGUxcHA1M2dia3VpaGIxMXFnaWQ4dTg4ZTggamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-29T10:38:24.000Z",
+    "updated": "2022-07-29T10:38:24.519Z",
+    "summary": "Chiropractor",
+    "description": "You are seeing Dr Jonathon Langer. \n \nPh: (08) 9382 3466\nFax: (08) 9382 3477\nE: info@langerhealth.com.au",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-03T08:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-03T09:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "0e1pp53gbkuihb11qgid8u88e8@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3318500253812000\"",
+    "id": "4c14k90q8413dp288krjg0jkuo",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NGMxNGs5MHE4NDEzZHAyODhrcmpnMGprdW8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-07-31T06:48:46.000Z",
+    "updated": "2022-07-31T06:48:46.906Z",
+    "summary": "UWA Quiz Night",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-17T19:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-17T20:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "4c14k90q8413dp288krjg0jkuo@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3318653846260000\"",
+    "id": "fsivt9ioarotigr6pa0ttvr8o4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ZnNpdnQ5aW9hcm90aWdyNnBhMHR0dnI4bzQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-01T04:08:43.000Z",
+    "updated": "2022-08-01T04:08:43.130Z",
+    "summary": "Cocktail party",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-12T18:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-12T19:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "fsivt9ioarotigr6pa0ttvr8o4@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3318653949052000\"",
+    "id": "mbg58c3c40q0me5lnte3mkv9vg",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=bWJnNThjM2M0MHEwbWU1bG50ZTNta3Y5dmcgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-01T04:09:34.000Z",
+    "updated": "2022-08-01T04:09:34.526Z",
+    "summary": "Kbbq",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-03T18:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-03T19:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "mbg58c3c40q0me5lnte3mkv9vg@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3318984862686000\"",
+    "id": "07rmbs14r4djs4kaqreskvspkk",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MDdybWJzMTRyNGRqczRrYXFyZXNrdnNwa2sgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-01T04:09:27.000Z",
+    "updated": "2022-08-03T02:07:11.343Z",
+    "summary": "Manicure with Ronny",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-03T11:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-03T12:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "07rmbs14r4djs4kaqreskvspkk@google.com",
+    "sequence": 2,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3319893552744000\"",
+    "id": "5fs00dgb800iqiibbmp1v5sc7s",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NWZzMDBkZ2I4MDBpcWlpYmJtcDF2NXNjN3MgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-08T08:19:36.000Z",
+    "updated": "2022-08-08T08:19:36.372Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-11T13:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-11T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "5fs00dgb800iqiibbmp1v5sc7s@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3319893633850000\"",
+    "id": "5cp5ooisqjb4gr70idclt6uaso",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NWNwNW9vaXNxamI0Z3I3MGlkY2x0NnVhc28gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-08T08:20:16.000Z",
+    "updated": "2022-08-08T08:20:16.925Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-13T08:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-13T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "5cp5ooisqjb4gr70idclt6uaso@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3320462712052000\"",
+    "id": "4a3dasrq8aiikl134t53c15n1t",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NGEzZGFzcnE4YWlpa2wxMzR0NTNjMTVuMXQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-11T15:22:36.000Z",
+    "updated": "2022-08-11T15:22:36.026Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-18T14:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-18T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "4a3dasrq8aiikl134t53c15n1t@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3320462762128000\"",
+    "id": "72j3209u2fbg1mrl1kk5b3aoda",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NzJqMzIwOXUyZmJnMW1ybDFrazViM2FvZGEgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-11T15:23:01.000Z",
+    "updated": "2022-08-11T15:23:01.064Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-20T09:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-20T13:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "72j3209u2fbg1mrl1kk5b3aoda@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3320462793778000\"",
+    "id": "2f72r1oovm5l8rnesq6ln79gpb",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MmY3MnIxb292bTVsOHJuZXNxNmxuNzlncGIgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-11T15:23:16.000Z",
+    "updated": "2022-08-11T15:23:16.889Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-25T14:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-25T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "2f72r1oovm5l8rnesq6ln79gpb@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3320738016862000\"",
+    "id": "1vi1fc0adndpughsu5v7r9ddtg",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MXZpMWZjMGFkbmRwdWdoc3U1djdyOWRkdGcgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-13T05:36:48.000Z",
+    "updated": "2022-08-13T05:36:48.431Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-14T13:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-14T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "1vi1fc0adndpughsu5v7r9ddtg@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3321756259544000\"",
+    "id": "alp3hstv0gic8r0hlo56ul6bvc",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=YWxwM2hzdHYwZ2ljOHIwaGxvNTZ1bDZidmMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-19T03:02:09.000Z",
+    "updated": "2022-08-19T03:02:09.772Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-23T12:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-23T15:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "alp3hstv0gic8r0hlo56ul6bvc@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3322720724622000\"",
+    "id": "p16195l1usvqo44u7kod48a1e8",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=cDE2MTk1bDF1c3ZxbzQ0dTdrb2Q0OGExZTggamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-24T16:59:22.000Z",
+    "updated": "2022-08-24T16:59:22.311Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-27T12:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-27T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "p16195l1usvqo44u7kod48a1e8@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323305827120000\"",
+    "id": "uk43fa3886ap5m78sulcsu653s",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=dWs0M2ZhMzg4NmFwNW03OHN1bGNzdTY1M3MgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-28T02:15:13.000Z",
+    "updated": "2022-08-28T02:15:13.560Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-29T10:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-29T15:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "uk43fa3886ap5m78sulcsu653s@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323700643638000\"",
+    "id": "1dvhermv5rhpfo03tjejn8bfhc",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MWR2aGVybXY1cmhwZm8wM3RqZWpuOGJmaGMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:05:21.000Z",
+    "updated": "2022-08-30T09:05:21.819Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-31T13:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-31T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "1dvhermv5rhpfo03tjejn8bfhc@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323700693224000\"",
+    "id": "7evrh6cfu1mg8iqr6696t9efqs",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=N2V2cmg2Y2Z1MW1nOGlxcjY2OTZ0OWVmcXMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:05:40.000Z",
+    "updated": "2022-08-30T09:05:46.612Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-01T16:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-01T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "7evrh6cfu1mg8iqr6696t9efqs@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323700816584000\"",
+    "id": "5h6ab74fq361mctamsb0f47b4s",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NWg2YWI3NGZxMzYxbWN0YW1zYjBmNDdiNHMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:06:48.000Z",
+    "updated": "2022-08-30T09:06:48.292Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-04T14:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-04T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "5h6ab74fq361mctamsb0f47b4s@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323700853186000\"",
+    "id": "6fv2qlav9fdh7nv5q7a12m0rio",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NmZ2MnFsYXY5ZmRoN252NXE3YTEybTByaW8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:07:06.000Z",
+    "updated": "2022-08-30T09:07:06.593Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-05T13:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-05T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "6fv2qlav9fdh7nv5q7a12m0rio@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323700896880000\"",
+    "id": "167pi4nd8don6eq1ajvgr68qus",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MTY3cGk0bmQ4ZG9uNmVxMWFqdmdyNjhxdXMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:07:28.000Z",
+    "updated": "2022-08-30T09:07:28.440Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-08T16:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-08T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "167pi4nd8don6eq1ajvgr68qus@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323701009978000\"",
+    "id": "nti1ml6jeg6dtbqsloc54cghvg",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=bnRpMW1sNmplZzZkdGJxc2xvYzU0Y2dodmcgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:08:24.000Z",
+    "updated": "2022-08-30T09:08:24.989Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-11T14:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-11T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "nti1ml6jeg6dtbqsloc54cghvg@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323701098914000\"",
+    "id": "e4sug99du46qp41kqajc1mt25c",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ZTRzdWc5OWR1NDZxcDQxa3FhamMxbXQyNWMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:09:09.000Z",
+    "updated": "2022-08-30T09:09:09.457Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-13T13:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-13T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "e4sug99du46qp41kqajc1mt25c@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323836058624000\"",
+    "id": "4dftica3bfpv1fom3d7io69n6o",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NGRmdGljYTNiZnB2MWZvbTNkN2lvNjluNm8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-08T05:53:02.000Z",
+    "updated": "2022-08-31T03:53:49.312Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-16T08:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-16T11:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "4dftica3bfpv1fom3d7io69n6o@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323836076622000\"",
+    "id": "5ff892o0bs1ajrlq1ijggtpq2o",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NWZmODkybzBiczFhanJscTFpamdndHBxMm8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-03T15:18:09.000Z",
+    "updated": "2022-08-31T03:53:58.311Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-08T08:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-08T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "5ff892o0bs1ajrlq1ijggtpq2o@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323836133058000\"",
+    "id": "1uoa6tp7jioqdo048tuhrqb98k",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MXVvYTZ0cDdqaW9xZG8wNDh0dWhycWI5OGsgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-01T04:09:50.000Z",
+    "updated": "2022-08-31T03:54:26.529Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-04T14:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-04T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "1uoa6tp7jioqdo048tuhrqb98k@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3323836145056000\"",
+    "id": "lt8tgbk8hj8lbi8c5lenhidhno",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=bHQ4dGdiazhoajhsYmk4YzVsZW5oaWRobm8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-01T04:10:11.000Z",
+    "updated": "2022-08-31T03:54:32.528Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-05T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-05T14:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "lt8tgbk8hj8lbi8c5lenhidhno@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3324886095260000\"",
+    "id": "60f71a1cu4b7aom1gv90lst4hs",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NjBmNzFhMWN1NGI3YW9tMWd2OTBsc3Q0aHMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-06T05:44:07.000Z",
+    "updated": "2022-09-06T05:44:07.630Z",
+    "summary": "Dentist Appointment",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2023-04-11T16:40:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2023-04-11T17:40:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "60f71a1cu4b7aom1gv90lst4hs@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3325157342844000\"",
+    "id": "4qm6kta3qbqd1vunu4d2akrhs0",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NHFtNmt0YTNxYnFkMXZ1bnU0ZDJha3JoczAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-07T19:24:31.000Z",
+    "updated": "2022-09-07T19:24:31.422Z",
+    "summary": "Book Airbnb",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-08T12:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-08T13:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "4qm6kta3qbqd1vunu4d2akrhs0@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3325259519570000\"",
+    "id": "v7g7elvjau1no1ao97p3jvkqpc",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=djdnN2VsdmphdTFubzFhbzk3cDNqdmtxcGMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-31T03:48:02.000Z",
+    "updated": "2022-09-08T09:35:59.785Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-25T10:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-25T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "v7g7elvjau1no1ao97p3jvkqpc@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3325260291584000\"",
+    "id": "ull1e5eso4g941ir8stlq7vfbc",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=dWxsMWU1ZXNvNGc5NDFpcjhzdGxxN3ZmYmMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:07:47.000Z",
+    "updated": "2022-09-08T09:42:25.792Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-09T12:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-09T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "ull1e5eso4g941ir8stlq7vfbc@google.com",
+    "sequence": 2,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3326265185428000\"",
+    "id": "1msqnlf2vlfm78iah8sp8imqvc",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MW1zcW5sZjJ2bGZtNzhpYWg4c3A4aW1xdmMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:09:35.000Z",
+    "updated": "2022-09-14T05:16:32.714Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-14T13:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-14T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "visibility": "public",
+    "iCalUID": "1msqnlf2vlfm78iah8sp8imqvc@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3326311629524000\"",
+    "id": "svt15ls6vkg7ig9i2h6ialg68c",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=c3Z0MTVsczZ2a2c3aWc5aTJoNmlhbGc2OGMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-14T11:43:34.000Z",
+    "updated": "2022-09-14T11:43:34.762Z",
+    "summary": "TEST EVENT",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-08-30T12:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-08-30T13:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "svt15ls6vkg7ig9i2h6ialg68c@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3326459003006000\"",
+    "id": "2qa2fh110jrg06rraprukdl428",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MnFhMmZoMTEwanJnMDZycmFwcnVrZGw0MjggamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:10:20.000Z",
+    "updated": "2022-09-15T08:11:41.503Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-15T16:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-15T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "visibility": "public",
+    "iCalUID": "2qa2fh110jrg06rraprukdl428@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3326462827980000\"",
+    "id": "ibe0rne2od9jho783ahtre63d4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=aWJlMHJuZTJvZDlqaG83ODNhaHRyZTYzZDQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:11:55.000Z",
+    "updated": "2022-09-15T08:43:33.990Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-20T08:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-20T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "ibe0rne2od9jho783ahtre63d4@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3326686616184000\"",
+    "id": "if7t1b3s7jg6jr9rhumg1gmme4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=aWY3dDFiM3M3amc2anI5cmh1bWcxZ21tZTQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-16T15:48:28.000Z",
+    "updated": "2022-09-16T15:48:28.092Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-17T12:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-17T15:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "if7t1b3s7jg6jr9rhumg1gmme4@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3326951095616000\"",
+    "id": "b6lj464scq7kfn2scc42cspcq0",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=YjZsajQ2NHNjcTdrZm4yc2NjNDJjc3BjcTAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-30T09:11:30.000Z",
+    "updated": "2022-09-18T04:32:27.808Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-18T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-18T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "visibility": "public",
+    "iCalUID": "b6lj464scq7kfn2scc42cspcq0@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3327190463862000\"",
+    "id": "04ll99ro1j5k9etpdekkc1dq4o",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MDRsbDk5cm8xajVrOWV0cGRla2tjMWRxNG8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-19T13:47:11.000Z",
+    "updated": "2022-09-19T13:47:11.931Z",
+    "summary": "Amy orthodontist",
+    "location": "21 coolibah drive, greenwood",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-21T08:40:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-21T09:40:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "04ll99ro1j5k9etpdekkc1dq4o@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3327317611802000\"",
+    "id": "73l7dpve6hd9lk4hjjrhpmb5gk",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NzNsN2RwdmU2aGQ5bGs0aGpqcmhwbWI1Z2sgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-31T03:47:11.000Z",
+    "updated": "2022-09-20T07:26:45.901Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-21T10:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-21T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "73l7dpve6hd9lk4hjjrhpmb5gk@google.com",
+    "sequence": 2,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3327346126468000\"",
+    "id": "klbm3mnp897lb7efo8g91j0uls",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=a2xibTNtbnA4OTdsYjdlZm84ZzkxajB1bHMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-20T11:24:23.000Z",
+    "updated": "2022-09-20T11:24:23.234Z",
+    "summary": "Pick up mum from airport",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-27T08:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-27T09:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "klbm3mnp897lb7efo8g91j0uls@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3327631084346000\"",
+    "id": "btl8kfmvqfj3up44g4p3pd139s",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=YnRsOGtmbXZxZmozdXA0NGc0cDNwZDEzOXMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-31T03:48:21.000Z",
+    "updated": "2022-09-22T02:59:02.173Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-26T12:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-26T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "btl8kfmvqfj3up44g4p3pd139s@google.com",
+    "sequence": 2,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3327818011194000\"",
+    "id": "ro2l3l7ktrhrdud3630so7g4b0",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=cm8ybDNsN2t0cmhyZHVkMzYzMHNvN2c0YjAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-18T08:54:17.000Z",
+    "updated": "2022-09-23T04:56:45.597Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-24T09:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-24T14:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "ro2l3l7ktrhrdud3630so7g4b0@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3328207179488000\"",
+    "id": "s62bfnfa9gnn5fli446ijrkpi8",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=czYyYmZuZmE5Z25uNWZsaTQ0NmlqcmtwaTggamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-25T10:59:49.000Z",
+    "updated": "2022-09-25T10:59:49.744Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-22T12:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-22T16:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "s62bfnfa9gnn5fli446ijrkpi8@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3328525103788000\"",
+    "id": "28n89mmkl0t4av0ld9hrgj2b2g",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MjhuODltbWtsMHQ0YXYwbGQ5aHJnajJiMmcgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-08-31T03:48:39.000Z",
+    "updated": "2022-09-27T07:09:11.894Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-09-28T12:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-09-28T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "28n89mmkl0t4av0ld9hrgj2b2g@google.com",
+    "sequence": 2,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3329074012014000\"",
+    "id": "dsv1hllmnhdf664rm4cimrhdq8",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ZHN2MWhsbG1uaGRmNjY0cm00Y2ltcmhkcTggamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-25T14:29:18.000Z",
+    "updated": "2022-09-30T11:23:26.007Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-06-26T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-06-26T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "dsv1hllmnhdf664rm4cimrhdq8@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3329245761650000\"",
+    "id": "vh3dofv01er88q570sss0sdvho",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=dmgzZG9mdjAxZXI4OHE1NzBzc3Mwc2R2aG8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-30T09:01:55.000Z",
+    "updated": "2022-10-01T11:14:40.825Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-02T10:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-02T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "vh3dofv01er88q570sss0sdvho@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3320850667681000\"",
+    "id": "_6tlnaqrle5p6cpb4dhmj4phpegpm6q1k6pmn6pjje1h78rhhehp6qqho6lln0cr6ehh6ud3d6oqn8qr9e1hj0e36cso6qpbj64qmqpj5epjme",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=XzZ0bG5hcXJsZTVwNmNwYjRkaG1qNHBocGVncG02cTFrNnBtbjZwamplMWg3OHJoaGVocDZxcWhvNmxsbjBjcjZlaGg2dWQzZDZvcW44cXI5ZTFoajBlMzZjc282cXBiajY0cW1xcGo1ZXBqbWUgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-23T13:59:39.000Z",
+    "updated": "2022-10-04T04:31:27.997Z",
+    "summary": "Flight to Singapore (SQ 607)",
+    "description": "To see detailed information for automatically created events like this one, use the official Google Calendar app. https://g.co/calendar\n\nThis event was created from an email you received in Gmail. https://mail.google.com/mail?extsrc=cal&plid=ACUX6DOs9zMr_QQCBzy21-0b0RqCV8tkM-4UOlI\n",
+    "location": "Seoul ICN",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "unknownorganizer@calendar.google.com" },
+    "start": {
+      "dateTime": "2022-12-09T08:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-09T14:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "transparency": "transparent",
+    "visibility": "private",
+    "iCalUID": "7kukuqrfedlm2f9t3ch46msfspbtn1trmj85kp3ftbo4m65tkipc08fg0mes15mfevgg",
+    "sequence": 0,
+    "attendees": [
+      {
+        "email": "jakeldeveloper@gmail.com",
+        "self": true,
+        "responseStatus": "accepted"
+      }
+    ],
+    "guestsCanInviteOthers": false,
+    "privateCopy": true,
+    "reminders": { "useDefault": false },
+    "source": {
+      "url": "https://mail.google.com/mail?extsrc=cal&plid=ACUX6DOs9zMr_QQCBzy21-0b0RqCV8tkM-4UOlI",
+      "title": ""
+    },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3320850667681000\"",
+    "id": "_6tlnaqrle5p6cpb4dhmj4phpehnncor9e1n32t3bd4o30or675o74tb66tl62t1oelp78rhkdsq3gojec9r6ip3a65qj8sj56hh3asbdd8r6e",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=XzZ0bG5hcXJsZTVwNmNwYjRkaG1qNHBocGVobm5jb3I5ZTFuMzJ0M2JkNG8zMG9yNjc1bzc0dGI2NnRsNjJ0MW9lbHA3OHJoa2RzcTNnb2plYzlyNmlwM2E2NXFqOHNqNTZoaDNhc2JkZDhyNmUgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-23T13:59:39.000Z",
+    "updated": "2022-10-04T04:31:27.997Z",
+    "summary": "Flight to Perth (SQ 215)",
+    "description": "To see detailed information for automatically created events like this one, use the official Google Calendar app. https://g.co/calendar\n\nThis event was created from an email you received in Gmail. https://mail.google.com/mail?extsrc=cal&plid=ACUX6DOs9zMr_QQCBzy21-0b0RqCV8tkM-4UOlI\n",
+    "location": "Singapore SIN",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "unknownorganizer@calendar.google.com" },
+    "start": {
+      "dateTime": "2022-12-09T18:40:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-09T23:55:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "transparency": "transparent",
+    "visibility": "private",
+    "iCalUID": "7kukuqrfedlm2f9tovcipn1tki00cf9pruf7jat8urtn4o48bnbvidj1u4re4b5qmj6g",
+    "sequence": 0,
+    "attendees": [
+      {
+        "email": "jakeldeveloper@gmail.com",
+        "self": true,
+        "responseStatus": "accepted"
+      }
+    ],
+    "guestsCanInviteOthers": false,
+    "privateCopy": true,
+    "reminders": { "useDefault": false },
+    "source": {
+      "url": "https://mail.google.com/mail?extsrc=cal&plid=ACUX6DOs9zMr_QQCBzy21-0b0RqCV8tkM-4UOlI",
+      "title": ""
+    },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3329783518906000\"",
+    "id": "5kda8ibljg599p70p9btet1g98",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NWtkYThpYmxqZzU5OXA3MHA5YnRldDFnOTggamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-30T10:54:14.000Z",
+    "updated": "2022-10-04T13:55:59.453Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-07T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-07T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "5kda8ibljg599p70p9btet1g98@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3329783700458000\"",
+    "id": "gka2ci7bhaf6s526n60si5hasg",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=Z2thMmNpN2JoYWY2czUyNm42MHNpNWhhc2cgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-04T13:57:30.000Z",
+    "updated": "2022-10-04T13:57:30.229Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-15T10:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-15T14:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "gka2ci7bhaf6s526n60si5hasg@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3329783891552000\"",
+    "id": "ghgen34m0lf4ni81ip9pq3ncdo",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=Z2hnZW4zNG0wbGY0bmk4MWlwOXBxM25jZG8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-04T13:57:15.000Z",
+    "updated": "2022-10-04T13:59:05.776Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-13T16:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-13T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "ghgen34m0lf4ni81ip9pq3ncdo@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3329902058124000\"",
+    "id": "c7fo7jt42i3ju5voreip8d4fco",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=YzdmbzdqdDQyaTNqdTV2b3JlaXA4ZDRmY28gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-05T06:23:39.000Z",
+    "updated": "2022-10-05T06:23:49.062Z",
+    "summary": "Jordan’s Bday",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-11T09:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-11T10:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "c7fo7jt42i3ju5voreip8d4fco@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3330089996672000\"",
+    "id": "0gloc66ibltk8qmaqgsfkfe1ne",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MGdsb2M2NmlibHRrOHFtYXFnc2ZrZmUxbmUgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-09-30T10:53:53.000Z",
+    "updated": "2022-10-06T08:29:58.336Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-06T16:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-06T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "0gloc66ibltk8qmaqgsfkfe1ne@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3330416738996000\"",
+    "id": "vm0vre7kk7aj1s5c00bar81uk0",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=dm0wdnJlN2trN2FqMXM1YzAwYmFyODF1azAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-04T13:56:28.000Z",
+    "updated": "2022-10-08T05:52:49.498Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-08T09:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-08T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "vm0vre7kk7aj1s5c00bar81uk0@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3330463616434000\"",
+    "id": "j7o76asaunourmnls6di75ggh4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ajdvNzZhc2F1bm91cm1ubHM2ZGk3NWdnaDQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-07T13:54:41.000Z",
+    "updated": "2022-10-08T12:23:28.217Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-09T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-09T16:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "j7o76asaunourmnls6di75ggh4@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3331271005825000\"",
+    "id": "_6tlnaqrle5p6cpb4dhmj4phpehm34qbhc5gjetjfchoj6c9gekqj8qja6hnm6p9o6hi6qq9nd5njcojidtp3ippmeor34q9hepm72d3e6ppj0",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=XzZ0bG5hcXJsZTVwNmNwYjRkaG1qNHBocGVobTM0cWJoYzVnamV0amZjaG9qNmM5Z2VrcWo4cWphNmhubTZwOW82aGk2cXE5bmQ1bmpjb2ppZHRwM2lwcG1lb3IzNHE5aGVwbTcyZDNlNnBwajAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-13T04:31:42.000Z",
+    "updated": "2022-10-13T04:31:43.786Z",
+    "summary": "Flight to Osaka (MM 6)",
+    "description": "To see detailed information for automatically created events like this one, use the official Google Calendar app. https://g.co/calendar\n\nThis event was created from an email you received in Gmail. https://mail.google.com/mail?extsrc=cal&plid=ACUX6DMsa_lPu0bR4IsSLVlzDHmPibEnhdgrShY\n",
+    "location": "Seoul ICN",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "unknownorganizer@calendar.google.com" },
+    "start": {
+      "dateTime": "2022-11-30T14:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-30T16:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "transparency": "transparent",
+    "visibility": "private",
+    "iCalUID": "7kukuqrfedlm2f9tl2iqaa7vodq310u54jj4oce84dmi7io6bror9g6v62i1vlq4n6s0",
+    "sequence": 0,
+    "attendees": [
+      {
+        "email": "jakeldeveloper@gmail.com",
+        "self": true,
+        "responseStatus": "accepted"
+      }
+    ],
+    "guestsCanInviteOthers": false,
+    "privateCopy": true,
+    "reminders": { "useDefault": false },
+    "source": {
+      "url": "https://mail.google.com/mail?extsrc=cal&plid=ACUX6DMsa_lPu0bR4IsSLVlzDHmPibEnhdgrShY",
+      "title": ""
+    },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3331295583088000\"",
+    "id": "o247kkaj3p9im1rmeah24b2bh4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=bzI0N2trYWozcDlpbTFybWVhaDI0YjJiaDQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-13T07:56:31.000Z",
+    "updated": "2022-10-13T07:56:31.544Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-12-18T09:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-18T18:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "o247kkaj3p9im1rmeah24b2bh4@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3331781454012000\"",
+    "id": "d33q5auika76e8k6p64c0ga56s",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ZDMzcTVhdWlrYTc2ZThrNnA2NGMwZ2E1NnMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-15T03:56:13.000Z",
+    "updated": "2022-10-16T03:25:27.006Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-16T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-16T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "d33q5auika76e8k6p64c0ga56s@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3332501966954000\"",
+    "id": "a1ruf0odvsb7lgv6ufu9lqo254",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=YTFydWYwb2R2c2I3bGd2NnVmdTlscW8yNTQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-04T13:59:18.000Z",
+    "updated": "2022-10-20T07:29:43.477Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-20T14:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-20T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "a1ruf0odvsb7lgv6ufu9lqo254@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3332503424202000\"",
+    "id": "qrn2j5rsd5ekjqs8fhm3iamafk",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=cXJuMmo1cnNkNWVranFzOGZobTNpYW1hZmsgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-13T07:56:54.000Z",
+    "updated": "2022-10-20T07:41:52.101Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-12-20T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-20T19:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "qrn2j5rsd5ekjqs8fhm3iamafk@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3332503470698000\"",
+    "id": "f6k8omh71oolido4e3j80ag98o",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ZjZrOG9taDcxb29saWRvNGUzajgwYWc5OG8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-13T07:57:54.000Z",
+    "updated": "2022-10-20T07:42:15.349Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-12-24T09:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-24T18:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "f6k8omh71oolido4e3j80ag98o@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3332503522464000\"",
+    "id": "en8rpja828nl9imalmep69egms",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ZW44cnBqYTgyOG5sOWltYWxtZXA2OWVnbXMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-20T07:42:41.000Z",
+    "updated": "2022-10-20T07:42:41.232Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-12-26T09:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-26T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "en8rpja828nl9imalmep69egms@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3332503614254000\"",
+    "id": "i9n8vpol101iq2smvhoebmhme4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=aTluOHZwb2wxMDFpcTJzbXZob2VibWhtZTQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-20T07:43:27.000Z",
+    "updated": "2022-10-20T07:43:27.127Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-12-28T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-28T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "i9n8vpol101iq2smvhoebmhme4@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3332503654042000\"",
+    "id": "u2ldl3kkm9g12qauffqt9ru7s4",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=dTJsZGwza2ttOWcxMnFhdWZmcXQ5cnU3czQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-20T07:43:47.000Z",
+    "updated": "2022-10-20T07:43:47.021Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-12-29T16:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-29T21:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "u2ldl3kkm9g12qauffqt9ru7s4@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3332539917566000\"",
+    "id": "t71bgiljn35lo6pet3ohcfvj84",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=dDcxYmdpbGpuMzVsbzZwZXQzb2hjZnZqODQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-18T04:14:17.000Z",
+    "updated": "2022-10-20T12:45:58.783Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-21T08:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-21T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "t71bgiljn35lo6pet3ohcfvj84@google.com",
+    "sequence": 2,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3332921198538000\"",
+    "id": "v2a6bmcb80v9nluqsa9uteic7o",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=djJhNmJtY2I4MHY5bmx1cXNhOXV0ZWljN28gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-21T08:16:36.000Z",
+    "updated": "2022-10-22T17:43:19.269Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-23T10:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-23T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "v2a6bmcb80v9nluqsa9uteic7o@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3333372752078000\"",
+    "id": "euj3k6jprkdpi2e09matf3ng4c",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ZXVqM2s2anBya2RwaTJlMDltYXRmM25nNGMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-04T14:00:01.000Z",
+    "updated": "2022-10-25T08:26:16.039Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-27T17:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-27T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "euj3k6jprkdpi2e09matf3ng4c@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3333372800336000\"",
+    "id": "7im4o78lo59hguvh2pa6eov41k",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=N2ltNG83OGxvNTloZ3V2aDJwYTZlb3Y0MWsgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-04T14:00:30.000Z",
+    "updated": "2022-10-25T08:26:40.168Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-29T10:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-29T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "7im4o78lo59hguvh2pa6eov41k@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3333372881230000\"",
+    "id": "eca2gcehcmoktikh8akpnd0i14",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ZWNhMmdjZWhjbW9rdGlraDhha3BuZDBpMTQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-20T07:41:02.000Z",
+    "updated": "2022-10-25T08:27:20.615Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-11-05T13:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-05T16:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "eca2gcehcmoktikh8akpnd0i14@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3333841745796000\"",
+    "id": "kdqg6uekg45d3f99sf47h6v2tc",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=a2RxZzZ1ZWtnNDVkM2Y5OXNmNDdoNnYydGMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-17T13:50:40.000Z",
+    "updated": "2022-10-28T01:34:32.898Z",
+    "summary": "Parents to Rotto Ferry",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-28T09:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-28T10:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "kdqg6uekg45d3f99sf47h6v2tc@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3333867628084000\"",
+    "id": "fat8fc71r3182u1beufvetig5k",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=ZmF0OGZjNzFyMzE4MnUxYmV1ZnZldGlnNWsgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-28T05:10:14.000Z",
+    "updated": "2022-10-28T05:10:14.042Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-28T14:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-28T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "fat8fc71r3182u1beufvetig5k@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3333879409824000\"",
+    "id": "ic6ql4tl08np8gfjk6l3em6p24",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=aWM2cWw0dGwwOG5wOGdmams2bDNlbTZwMjQgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-25T08:29:43.000Z",
+    "updated": "2022-10-28T06:48:24.912Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-26T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-26T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "ic6ql4tl08np8gfjk6l3em6p24@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3332001129413000\"",
+    "id": "_6tlnaqrle5p6cpb4dhmj4phpegr64cj164q30c9hc9pn4shi75h3eohgd9gmarjec5r62t36dhn64chg6tq7ap9o75qjgc1p6dh3ie34e1n6e",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=XzZ0bG5hcXJsZTVwNmNwYjRkaG1qNHBocGVncjY0Y2oxNjRxMzBjOWhjOXBuNHNoaTc1aDNlb2hnZDlnbWFyamVjNXI2MnQzNmRobjY0Y2hnNnRxN2FwOW83NXFqZ2MxcDZkaDNpZTM0ZTFuNmUgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-06T06:24:09.000Z",
+    "updated": "2022-10-28T13:27:59.730Z",
+    "summary": "Flight to Perth (SQ 225)",
+    "description": "To see detailed information for automatically created events like this one, use the official Google Calendar app. https://g.co/calendar\n\nThis event was created from an email you received in Gmail. https://mail.google.com/mail?extsrc=cal&plid=ACUX6DPYSdKj8tdLl_mxDNS0TFItFO_SYnGvwe4\n",
+    "location": "Singapore SIN",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "unknownorganizer@calendar.google.com" },
+    "start": {
+      "dateTime": "2022-12-16T00:25:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-16T05:25:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "transparency": "transparent",
+    "visibility": "private",
+    "iCalUID": "7kukuqrfedlm2f9t6b2a14011bsrr29b7b0jaennavatflnb207tue89u8093b98dpng",
+    "sequence": 0,
+    "attendees": [
+      {
+        "email": "jakeldeveloper@gmail.com",
+        "self": true,
+        "responseStatus": "accepted"
+      }
+    ],
+    "guestsCanInviteOthers": false,
+    "privateCopy": true,
+    "reminders": { "useDefault": false },
+    "source": {
+      "url": "https://mail.google.com/mail?extsrc=cal&plid=ACUX6DPYSdKj8tdLl_mxDNS0TFItFO_SYnGvwe4",
+      "title": ""
+    },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3322956459414000\"",
+    "id": "_6tlnaqrle5p6cpb4dhmj4phpegsn2sph6lkncc3kcllmqr35d4p3gqpoc5o3cojf6hq30s3gccqn8prictljgs9p6ll74choehm62cr371l30",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=XzZ0bG5hcXJsZTVwNmNwYjRkaG1qNHBocGVnc24yc3BoNmxrbmNjM2tjbGxtcXIzNWQ0cDNncXBvYzVvM2NvamY2aHEzMHMzZ2NjcW44cHJpY3RsamdzOXA2bGw3NGNob2VobTYyY3IzNzFsMzAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-23T13:59:39.000Z",
+    "updated": "2022-10-28T13:27:59.730Z",
+    "summary": "Flight to Seoul (SQ 8576)",
+    "description": "To see detailed information for automatically created events like this one, use the official Google Calendar app. https://g.co/calendar\n\nThis event was created from an email you received in Gmail. https://mail.google.com/mail?extsrc=cal&plid=ACUX6DOs9zMr_QQCBzy21-0b0RqCV8tkM-4UOlI\n",
+    "location": "Singapore SIN",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "unknownorganizer@calendar.google.com" },
+    "start": {
+      "dateTime": "2022-11-16T03:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-16T09:25:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "transparency": "transparent",
+    "visibility": "private",
+    "iCalUID": "7kukuqrfedlm2f9t9qs15iv0tekmlei28k8ap6bo4t0ppc5tgrgk8q95jr28tla3c8j0",
+    "sequence": 0,
+    "attendees": [
+      {
+        "email": "jakeldeveloper@gmail.com",
+        "self": true,
+        "responseStatus": "accepted"
+      }
+    ],
+    "guestsCanInviteOthers": false,
+    "privateCopy": true,
+    "reminders": { "useDefault": false },
+    "source": {
+      "url": "https://mail.google.com/mail?extsrc=cal&plid=ACUX6DOs9zMr_QQCBzy21-0b0RqCV8tkM-4UOlI",
+      "title": ""
+    },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3322956459414000\"",
+    "id": "_6tlnaqrle5p6cpb4dhmj4phpehj3cq1je9in0pr5e5q6oe36d0qn0p1p6limksple9qm4rpoc5o38db5d9q70e3664smgqbhccp6edjce9j6e",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=XzZ0bG5hcXJsZTVwNmNwYjRkaG1qNHBocGVoajNjcTFqZTlpbjBwcjVlNXE2b2UzNmQwcW4wcDFwNmxpbWtzcGxlOXFtNHJwb2M1bzM4ZGI1ZDlxNzBlMzY2NHNtZ3FiaGNjcDZlZGpjZTlqNmUgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-06-23T13:59:39.000Z",
+    "updated": "2022-10-28T13:27:59.730Z",
+    "summary": "Flight to Singapore (SQ 214)",
+    "description": "To see detailed information for automatically created events like this one, use the official Google Calendar app. https://g.co/calendar\n\nThis event was created from an email you received in Gmail. https://mail.google.com/mail?extsrc=cal&plid=ACUX6DOs9zMr_QQCBzy21-0b0RqCV8tkM-4UOlI\n",
+    "location": "Perth PER",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "unknownorganizer@calendar.google.com" },
+    "start": {
+      "dateTime": "2022-11-15T17:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-15T22:40:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "transparency": "transparent",
+    "visibility": "private",
+    "iCalUID": "7kukuqrfedlm2f9tf6h3repgeqtl8fh5pd95ejs5rubo8ap45ejtp8f19hiqc2g6lrfg",
+    "sequence": 0,
+    "attendees": [
+      {
+        "email": "jakeldeveloper@gmail.com",
+        "self": true,
+        "responseStatus": "accepted"
+      }
+    ],
+    "guestsCanInviteOthers": false,
+    "privateCopy": true,
+    "reminders": { "useDefault": false },
+    "source": {
+      "url": "https://mail.google.com/mail?extsrc=cal&plid=ACUX6DOs9zMr_QQCBzy21-0b0RqCV8tkM-4UOlI",
+      "title": ""
+    },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3332001129413000\"",
+    "id": "_6tlnaqrle5p6cpb4dhmj4phpehqmcdpo6hk70tjleos34tbhd9r66e1gepr6upbedkpj4spp6hpmoopldlojitjm61o6qdjcdsq78dr9c5h6e",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=XzZ0bG5hcXJsZTVwNmNwYjRkaG1qNHBocGVocW1jZHBvNmhrNzB0amxlb3MzNHRiaGQ5cjY2ZTFnZXByNnVwYmVka3BqNHNwcDZocG1vb3BsZGxvaml0am02MW82cWRqY2RzcTc4ZHI5YzVoNmUgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-06T06:24:09.000Z",
+    "updated": "2022-10-28T13:27:59.730Z",
+    "summary": "Flight to Singapore (SQ 637)",
+    "description": "To see detailed information for automatically created events like this one, use the official Google Calendar app. https://g.co/calendar\n\nThis event was created from an email you received in Gmail. https://mail.google.com/mail?extsrc=cal&plid=ACUX6DPYSdKj8tdLl_mxDNS0TFItFO_SYnGvwe4\n",
+    "location": "Tokyo NRT",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "unknownorganizer@calendar.google.com" },
+    "start": {
+      "dateTime": "2022-12-15T09:55:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-15T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "transparency": "transparent",
+    "visibility": "private",
+    "iCalUID": "7kukuqrfedlm2f9tuf784hpvuv82uqjvc80vvoenm32s94slc5mq9vv0pm6lo4t7iabg",
+    "sequence": 0,
+    "attendees": [
+      {
+        "email": "jakeldeveloper@gmail.com",
+        "self": true,
+        "responseStatus": "accepted"
+      }
+    ],
+    "guestsCanInviteOthers": false,
+    "privateCopy": true,
+    "reminders": { "useDefault": false },
+    "source": {
+      "url": "https://mail.google.com/mail?extsrc=cal&plid=ACUX6DPYSdKj8tdLl_mxDNS0TFItFO_SYnGvwe4",
+      "title": ""
+    },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3333927364214000\"",
+    "id": "_6tlnaqrle5p6cpb4dhmj4phpehij6s1iehjj0s34dlknctjjehpmcdr36pj3csbk61l76ppmc5inct3c6cs6ss326hh66shjdopjisjkcth6e",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=XzZ0bG5hcXJsZTVwNmNwYjRkaG1qNHBocGVoaWo2czFpZWhqajBzMzRkbGtuY3RqamVocG1jZHIzNnBqM2NzYms2MWw3NnBwbWM1aW5jdDNjNmNzNnNzMzI2aGg2NnNoamRvcGppc2prY3RoNmUgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-28T13:27:59.000Z",
+    "updated": "2022-10-28T13:28:02.107Z",
+    "summary": "Stay at City Hotel N U T S",
+    "description": "To see detailed information for automatically created events like this one, use the official Google Calendar app. https://g.co/calendar\n\nThis event was created from an email you received in Gmail. https://mail.google.com/mail?extsrc=cal&plid=ACUX6DNN-D8vcikXqlScgEB2_r7tsapgR7Ip9Yk\n",
+    "location": "City Hotel N U T S, 新宿区",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "unknownorganizer@calendar.google.com" },
+    "start": { "date": "2022-12-04" },
+    "end": { "date": "2022-12-10" },
+    "transparency": "transparent",
+    "visibility": "private",
+    "iCalUID": "7kukuqrfedlm2f9te3p2tg0pdmivvstsf7c6f6qt0jsg6aevtl38npb4bcr3n39rtgbg",
+    "sequence": 0,
+    "attendees": [
+      {
+        "email": "jakeldeveloper@gmail.com",
+        "self": true,
+        "responseStatus": "accepted"
+      }
+    ],
+    "guestsCanInviteOthers": false,
+    "privateCopy": true,
+    "reminders": { "useDefault": false },
+    "source": {
+      "url": "https://mail.google.com/mail?extsrc=cal&plid=ACUX6DNN-D8vcikXqlScgEB2_r7tsapgR7Ip9Yk",
+      "title": ""
+    },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3334206415036000\"",
+    "id": "sv459hk0rud8lpo4d9etrem32g",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=c3Y0NTloazBydWQ4bHBvNGQ5ZXRyZW0zMmcgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-30T04:07:13.000Z",
+    "updated": "2022-10-30T04:13:27.518Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-11-06T12:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-06T16:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "sv459hk0rud8lpo4d9etrem32g@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3334251036636000\"",
+    "id": "hm6pa2en7hfi4006fpkdpq9i18",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=aG02cGEyZW43aGZpNDAwNmZwa2RwcTlpMTggamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-30T04:14:33.000Z",
+    "updated": "2022-10-30T10:25:18.318Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-31T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-31T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "hm6pa2en7hfi4006fpkdpq9i18@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3334251065500000\"",
+    "id": "vp4mjf8ldgo2ifvq3tgkrpbgqg",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=dnA0bWpmOGxkZ28yaWZ2cTN0Z2tycGJncWcgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-13T07:54:08.000Z",
+    "updated": "2022-10-30T10:25:32.750Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-10-30T12:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-10-30T17:10:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "vp4mjf8ldgo2ifvq3tgkrpbgqg@google.com",
+    "sequence": 2,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3334537821048000\"",
+    "id": "smv5ncpm1de7gjlcskool8dd1o",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=c212NW5jcG0xZGU3Z2psY3Nrb29sOGRkMW8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-31T14:44:41.000Z",
+    "updated": "2022-11-01T02:15:10.524Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-11-01T10:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-01T17:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "smv5ncpm1de7gjlcskool8dd1o@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3334712098434000\"",
+    "id": "3fncdr0mrf31q6acobuhanfi6s",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=M2ZuY2RyMG1yZjMxcTZhY29idWhhbmZpNnMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-11-01T12:23:45.000Z",
+    "updated": "2022-11-02T02:27:29.217Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-11-02T10:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-02T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "3fncdr0mrf31q6acobuhanfi6s@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3335134272934000\"",
+    "id": "7ed3rhisv1bt2nta9fri4l1d60",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=N2VkM3JoaXN2MWJ0Mm50YTlmcmk0bDFkNjAgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-11-04T13:05:36.000Z",
+    "updated": "2022-11-04T13:05:36.467Z",
+    "summary": "Claim discord gift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-12-01T14:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-01T15:30:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "7ed3rhisv1bt2nta9fri4l1d60@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3335553764024000\"",
+    "id": "542o1nm5tgil8jgich89l7labb",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NTQybzFubTV0Z2lsOGpnaWNoODlsN2xhYmIgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-11-06T23:21:02.000Z",
+    "updated": "2022-11-06T23:21:22.012Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-11-09T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-09T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "542o1nm5tgil8jgich89l7labb@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3335573404378000\"",
+    "id": "veb1odqcdialvocl1hjhstp9vk",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=dmViMW9kcWNkaWFsdm9jbDFoamhzdHA5dmsgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-11-06T15:40:26.000Z",
+    "updated": "2022-11-07T02:05:02.189Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-11-07T10:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-07T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "veb1odqcdialvocl1hjhstp9vk@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3335649457024000\"",
+    "id": "4jqplirgkv6hsuuve31ha4dv9s",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NGpxcGxpcmdrdjZoc3V1dmUzMWhhNGR2OXMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-13T07:55:37.000Z",
+    "updated": "2022-11-07T12:38:48.512Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-11-10T15:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-10T21:15:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "4jqplirgkv6hsuuve31ha4dv9s@google.com",
+    "sequence": 3,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3335745746624000\"",
+    "id": "2kagkt8pciiakea3ccritbs7ec",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=MmthZ2t0OHBjaWlha2VhM2Njcml0YnM3ZWMgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-11-07T14:38:02.000Z",
+    "updated": "2022-11-08T02:01:13.312Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-11-08T10:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-08T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "2kagkt8pciiakea3ccritbs7ec@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3335745887002000\"",
+    "id": "2m041jc9q0uejt9mr87mvb1dbo",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=Mm0wNDFqYzlxMHVlanQ5bXI4N212YjFkYm8gamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-11-08T02:02:23.000Z",
+    "updated": "2022-11-08T02:02:23.501Z",
+    "summary": "EB Games Shift (Cover)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-11-11T08:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-11T17:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "2m041jc9q0uejt9mr87mvb1dbo@google.com",
+    "sequence": 0,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3335745924268000\"",
+    "id": "cmliebuc2u5jlld32o8eughehk",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=Y21saWVidWMydTVqbGxkMzJvOGV1Z2hlaGsgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-11-01T11:14:18.000Z",
+    "updated": "2022-11-08T02:02:42.134Z",
+    "summary": "Pickup Korean Won (Travelex)",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-11-09T09:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-11-09T11:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "cmliebuc2u5jlld32o8eughehk@google.com",
+    "sequence": 3,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  },
+  {
+    "kind": "calendar#event",
+    "etag": "\"3336260279360000\"",
+    "id": "bo1688s08sofu9jqibhc2c7rek",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=Ym8xNjg4czA4c29mdTlqcWliaGMyYzdyZWsgamFrZWxkZXZlbG9wZXJAbQ",
+    "created": "2022-10-13T07:57:28.000Z",
+    "updated": "2022-11-11T01:28:59.680Z",
+    "summary": "EB Games Shift",
+    "creator": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "organizer": { "email": "jakeldeveloper@gmail.com", "self": true },
+    "start": {
+      "dateTime": "2022-12-22T08:45:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "end": {
+      "dateTime": "2022-12-22T16:00:00+08:00",
+      "timeZone": "Australia/Perth"
+    },
+    "iCalUID": "bo1688s08sofu9jqibhc2c7rek@google.com",
+    "sequence": 1,
+    "reminders": { "useDefault": true },
+    "eventType": "default"
+  }
+]

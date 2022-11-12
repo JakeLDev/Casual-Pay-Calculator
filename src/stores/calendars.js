@@ -27,6 +27,7 @@ export const loadCalendars = () => async (dispatch, getState) => {
       id,
       label: summary,
     }));
+    // sessionStorage.setItem('calendarList', JSON.stringify(calendarList));
 
     dispatch(setCalendars(calendarList));
 
