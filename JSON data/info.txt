@@ -1,0 +1,3 @@
+but applying tax in a custom time bracket would be hard, as tax is calculated through EB on a fornightly basis, not per shift
+so you could have a "minimum vs maximum" tax
+where the minimum assumes thats the only shifts for that pay period, and the max assumes that you're working a full 38 hours, and works out the penalty rates alongside that

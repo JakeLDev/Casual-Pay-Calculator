@@ -1,0 +1,42 @@
+0 – $18,200   ---   None
+	
+$18,201 – $45,000   ---   19 cents for each $1 over $18,200
+
+$45,001 – $120,000   ---   $5,092 plus 32.5 cents for each $1 over $45,000
+
+$120,001 – $180,000   ---   $29,467 plus 37 cents for each $1 over $120,000
+
+$180,001 and over   ---   $51,667 plus 45 cents for each $1 over $180,000
+
+PER YEAR   /   PER MONTH (/12)   /   PER FORTNIGHT (/26)
+
+TIER 1
+0 – $18,200
+	PER YEAR --- None
+	PER MONTH --- <$1517
+	PER FORTNIGHT --- <$700
+	
+TIER 2
+$18,201 – $45,000
+	PER YEAR --- $0.19 for each $1 over $18,200
+	PER MONTH --- $0.19 for each $1 over $1517
+	PER FORTNIGHT --- $0.19 for each $1 over $700
+	
+TIER 3
+$45,001 – $120,000
+	PER YEAR --- $5,092 plus $0.325 for each $1 over $45,000
+	PER MONTH --- $425 plus $0.325 for each $1 over $3750
+	PER FORTNIGHT --- $196 plus $0.325 for each $1 over $1731
+	
+TIER 4
+$120,001 – $180,000
+	PER YEAR --- $29,467 plus $0.37 for each $1 over $120,000
+	PER MONTH --- $2456 plus $0.37 for each $1 over $10,000
+	PER FORTNIGHT --- $1134 plus $0.37 for each $1 over $4616
+	
+TIER 5
+$180,001 and over
+	PER YEAR --- $51,667 plus $0.45 for each $1 over $180,000
+	PER MONTH --- $4306 plus $0.45 for each $1 over $15,000
+	PER FORTNIGHT --- $1988 plus $0.45 for each $1 over $6924
+	
